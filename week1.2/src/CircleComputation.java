@@ -10,11 +10,8 @@ public class CircleComputation {
         double radius = in.nextDouble();
 
         System.out.println("diameter = " + df.format(computeDiameter(radius)));
-
         System.out.println("area = " + df.format(computeArea(radius)));
-
         System.out.println("circumference = " + df.format(computeCircumference(radius)));
-
         System.out.println("surfaceArea = " + df.format(computeSurfaceArea(radius)));
         System.out.println("volume = " + df.format(computeVolume(radius)));
     }

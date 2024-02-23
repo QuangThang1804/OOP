@@ -2,18 +2,18 @@
 public class Fibonacci {
     public static void main(String[] args) {
         int number = 20;
-        int [] fibonacciArr = fibonacci(number);
+        int [] fibonacciArr = computeFibonacci(number);
         System.out.println("The first " + number + " Fibonacci numbers are: ");
         printArr(fibonacciArr);
 
         System.out.println();
 
-        int [] tribonacciArr = Tribonacci(number);
+        int [] tribonacciArr = computeTribonacci(number);
         System.out.println("The first " + number + " Tribonacci numbers are: ");
         printArr(tribonacciArr);
     }
 
-    public static int [] fibonacci(int number) {
+    public static int [] computeFibonacci(int number) {
         int [] fibArr = new int[number];
         for (int i = 0; i < fibArr.length; i++) {
             if (i >= 2) {
@@ -27,7 +27,7 @@ public class Fibonacci {
         return fibArr;
     }
 
-    public static int[] Tribonacci(int number) {
+    public static int[] computeTribonacci(int number) {
         int [] triArr = new int[number];
         for (int i = 0; i < triArr.length; i++) {
             if (i >= 3) {
