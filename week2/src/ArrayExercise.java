@@ -32,6 +32,7 @@ public class ArrayExercise {
                 }
             }
         }
+        System.out.println();
     }
 
     // 2.2
@@ -100,6 +101,7 @@ public class ArrayExercise {
 
     public static void testHexadecimalToBinary(Scanner input) {
         System.out.print("Enter a Hexadecimal string: ");
+        input.nextLine();
         String hexStr = input.nextLine();
         if (checkHexStr(hexStr)) {
             System.out.println("The equivalent binary for hexadecimal \"" + hexStr + "\" is: " + hexadecimalToBinary(hexStr));
@@ -141,9 +143,13 @@ public class ArrayExercise {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-//        printArray(createArray(input));
-//        simpleGradesStatistics(generateStudentGrade(input));
-//        testHexadecimalToBinary(input);
+        System.out.println("Ex2.1: ");
+        printArray(createArray(input));
+        System.out.println("Ex2.2: ");
+        simpleGradesStatistics(generateStudentGrade(input));
+        System.out.println("Ex2.3: ");
+        testHexadecimalToBinary(input);
+        System.out.println("Ex2.4: ");
         testDecimalToHexadecimal(input);
     }
 }

@@ -214,7 +214,7 @@ public class StringAndCharacterExercise {
         System.out.print("Enter a hex string: ");
         String inStr = input.nextLine();
         if (isHexString(inStr)) {
-            System.out.println("\" " + inStr + "\" is a hex string");
+            System.out.println("\"" + inStr + "\" is a hex string");
         } else {
             System.out.println("\"" + inStr + "\" is not a hex string");
         }
@@ -338,15 +338,25 @@ public class StringAndCharacterExercise {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.println("Ex1.1: ");
         testReverseString(input);
+        System.out.println("Ex1.2: ");
         testCountVowelsDigits(input);
+        System.out.println("Ex1.3: ");
         testPhoneKeyPad(input);
+        System.out.println("Ex1.4: ");
         testCipherCaesarCode(input);
+        System.out.println("Ex1.5: ");
         testDecipherCaesarCode(input);
+        System.out.println("Ex1.6: ");
         testHexString(input);
+        System.out.println("Ex1.7: ");
         testBinaryToDecimal(input);
+        System.out.println("Ex1.8: ");
         testHexadecimalToDecimal(input);
+        System.out.println("Ex1.9: ");
         testOctalToDecimal(input);
+        System.out.println("Ex1.10: ");
         testRadixNToDecimal(input);
     }
 }
