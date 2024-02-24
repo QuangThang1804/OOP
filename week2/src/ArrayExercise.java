@@ -12,20 +12,24 @@ public class ArrayExercise {
         System.out.print("Enter the number of items: ");
         final int NUM_ITEMS = input.nextInt();
         System.out.print("Enter the value of all items (seperated by space): ");
-        int [] items = new int[NUM_ITEMS];
+        int[] items = new int[NUM_ITEMS];
         for (int i = 0; i < items.length; i++) {
             items[i] = input.nextInt();
         }
         return items;
     }
 
-    public static void printArray(int [] array) {
+    public static void printArray(int[] array) {
         System.out.print("The values are: [");
-        for (int i = 0; i < array.length; i++) {
-            if (i != array.length - 1) {
-                System.out.print(array[i] + ", ");
-            } else {
-                System.out.print(array[i] + "]");
+        if (array.length == 1) {
+            System.out.println(array[0] + "]");
+        } else {
+            for (int i = 0; i < array.length; i++) {
+                if (i != array.length - 1) {
+                    System.out.print(array[i] + ", ");
+                } else {
+                    System.out.print(array[i] + "]");
+                }
             }
         }
     }
@@ -34,7 +38,7 @@ public class ArrayExercise {
     public static int[] generateStudentGrade(Scanner input) {
         System.out.print("Enter the number of students: ");
         int numStudents = input.nextInt();
-        int [] arrStudents = new int[numStudents];
+        int[] arrStudents = new int[numStudents];
         for (int i = 0; i < arrStudents.length; i++) {
             System.out.print("Enter the grade for student " + (i + 1) + ": ");
             arrStudents[i] = input.nextInt();
@@ -42,7 +46,7 @@ public class ArrayExercise {
         return arrStudents;
     }
 
-    public static void simpleGradesStatistics(int [] grades) {
+    public static void simpleGradesStatistics(int[] grades) {
         int sum = 0;
         double average;
         int max = grades[0];
@@ -134,6 +138,7 @@ public class ArrayExercise {
             System.out.println("error: the number must be a positive number");
         }
     }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 //        printArray(createArray(input));

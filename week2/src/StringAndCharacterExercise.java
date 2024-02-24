@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class StringAndCharacterExercise {
-    public static char [] vowels = {'a', 'e', 'i', 'o', 'u'};
+    public static char[] vowels = {'a', 'e', 'i', 'o', 'u'};
 
     // 1.1
     public static void testReverseString(Scanner input) {
@@ -317,8 +317,10 @@ public class StringAndCharacterExercise {
         String radixNStrToLower = radixNStr.toLowerCase();
         int lengthradixNStr = radixNStr.length() - 1;
         for (int i = 0; i < radixNStrToLower.length(); i++) {
-            if (radixNStrToLower.charAt(i) >= 48 && radixNStrToLower.charAt(i) <= 55) {
+            if (radixNStrToLower.charAt(i) >= 48 && radixNStrToLower.charAt(i) <= 57 + radix - 16) {
                 radixNStrToDecimalNumber += (int) ((radixNStrToLower.charAt(i) - 48) * Math.pow(radix, lengthradixNStr));
+            } else if (radixNStrToLower.charAt(i) >= 97 && radixNStrToLower.charAt(i) <= 102 + radix - 16) {
+                radixNStrToDecimalNumber += (int) ((radixNStrToLower.charAt(i) - 87) * Math.pow(radix, lengthradixNStr));
             }
             lengthradixNStr--;
         }
@@ -336,15 +338,15 @@ public class StringAndCharacterExercise {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-//        testReverseString(input);
-//        testCountVowelsDigits(input);
-//        testPhoneKeyPad(input);
-//        testCipherCaesarCode(input);
-//        testDecipherCaesarCode(input);
-//        testHexString(input);
+        testReverseString(input);
+        testCountVowelsDigits(input);
+        testPhoneKeyPad(input);
+        testCipherCaesarCode(input);
+        testDecipherCaesarCode(input);
+        testHexString(input);
         testBinaryToDecimal(input);
-//        testHexadecimalToDecimal(input);
-//        testOctalToDecimal(input);
-//        testRadixNToDecimal(input);
+        testHexadecimalToDecimal(input);
+        testOctalToDecimal(input);
+        testRadixNToDecimal(input);
     }
 }
