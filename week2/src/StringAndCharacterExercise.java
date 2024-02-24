@@ -1,3 +1,5 @@
+package hus.week2.src;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -233,7 +235,7 @@ public class StringAndCharacterExercise {
     public static boolean isBinaryString(String binStr) {
         boolean isBinaryStr = true;
         for (int i = 0; i < binStr.length(); i++) {
-            if (binStr.charAt(i) != '0' || binStr.charAt(i) != '1') {
+            if (binStr.charAt(i) != '0' && binStr.charAt(i) != '1') {
                 isBinaryStr = false;
             }
         }
@@ -334,15 +336,15 @@ public class StringAndCharacterExercise {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        testReverseString(input);
-        testCountVowelsDigits(input);
-        testPhoneKeyPad(input);
-        testCipherCaesarCode(input);
-        testDecipherCaesarCode(input);
-        testHexString(input);
+//        testReverseString(input);
+//        testCountVowelsDigits(input);
+//        testPhoneKeyPad(input);
+//        testCipherCaesarCode(input);
+//        testDecipherCaesarCode(input);
+//        testHexString(input);
         testBinaryToDecimal(input);
-        testHexadecimalToDecimal(input);
-        testOctalToDecimal(input);
-        testRadixNToDecimal(input);
+//        testHexadecimalToDecimal(input);
+//        testOctalToDecimal(input);
+//        testRadixNToDecimal(input);
     }
 }
