@@ -196,8 +196,8 @@ public class StringAndCharacterExercise {
         System.out.println("The plaintext string is: " + decipherCaesarCode(ciphertextString));
     }
 
-    // 1.5
-    public static boolean isHexString(String hexStr) {
+    // 1.6
+    public static boolean checkHexString(String hexStr) {
         boolean isHexString = true;
         String hexStrToLowerCase = hexStr.toLowerCase();
         for (int i = 0; i < hexStrToLowerCase.length(); i++) {
@@ -213,14 +213,14 @@ public class StringAndCharacterExercise {
     public static void testHexString(Scanner input) {
         System.out.print("Enter a hex string: ");
         String inStr = input.nextLine();
-        if (isHexString(inStr)) {
+        if (checkHexString(inStr)) {
             System.out.println("\"" + inStr + "\" is a hex string");
         } else {
             System.out.println("\"" + inStr + "\" is not a hex string");
         }
     }
 
-    // 1.7 nen lam de quy: n phep cong, n phep nhan
+    // 1.7
     public static int binaryToDecimal(String binStr) {
         int decimalNumber = 0;
         int lengthOfBinStr = binStr.length() - 1;
@@ -268,26 +268,13 @@ public class StringAndCharacterExercise {
         return hexStrToDecimalNumber;
     }
 
-    public static boolean checkHexStr(String hexStr) {
-        boolean isHexStr = true;
-        for (int i = 0; i < hexStr.length(); i++) {
-            if (hexStr.charAt(i) < 47
-            || (hexStr.charAt(i) > 57 && hexStr.charAt(i) < 65)
-            || (hexStr.charAt(i) > 70 && hexStr.charAt(i) < 97)
-            || (hexStr.charAt(i) > 102)) {
-                isHexStr = false;
-            }
-        }
-        return isHexStr;
-    }
-
     public static void testHexadecimalToDecimal(Scanner input) {
         System.out.print("Enter a Hexadecimal string: ");
         String inStr = input.nextLine();
-        if (isHexString(inStr)) {
+        if (checkHexString(inStr)) {
             System.out.println("The equivalent decimal number for hexadecimal \"" + inStr + "\" is: " + hexadecimalToDecimal(inStr));
         } else {
-            System.out.println("error: invalid binary string \"" + inStr + "\"");
+            System.out.println("error: invalid hexadecimal string \"" + inStr + "\"");
         }
     }
 
@@ -305,10 +292,24 @@ public class StringAndCharacterExercise {
         return octalStrToDecimalNumber;
     }
 
+    public static boolean checkOctalString(String octalStr) {
+        boolean isOctalString = true;
+        for (int i = 0; i < octalStr.length(); i++) {
+            if (octalStr.charAt(i) < 48 || octalStr.charAt(i) > 56) {
+                isOctalString = false;
+            }
+        }
+        return isOctalString;
+    }
+
     public static void testOctalToDecimal(Scanner input) {
         System.out.print("Enter an Octal string: ");
         String inStr = input.nextLine();
-        System.out.println("The equivalent decimal number \"" + inStr + "\" is: " + octalToDecimal(inStr));
+        if (checkOctalString(inStr)) {
+            System.out.println("The equivalent decimal number \"" + inStr + "\" is: " + octalToDecimal(inStr));
+        } else {
+            System.out.println("error: invalid octal string \"" + inStr + "\"");
+        }
     }
 
     // 1.10

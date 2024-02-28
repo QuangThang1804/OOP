@@ -137,7 +137,7 @@ public class ArrayExercise {
         if (posNumber > 0) {
             System.out.println("The equivalent hexadecimal number is: " + decimalToHexadecimal(posNumber));
         } else {
-            System.out.println("error: the number must be a positive number");
+            System.out.println("Error: the number must be a positive number");
         }
     }
 

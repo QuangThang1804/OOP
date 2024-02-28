@@ -29,7 +29,11 @@ public class MethodExercise {
         int base = input.nextInt();
         System.out.print("Enter the exponent: ");
         int exp = input.nextInt();
-        System.out.println(base + " raises to the power of " + exp + " is: " + exponent(base, exp));
+        if (exp >= 0) {
+            System.out.println(base + " raises to the power of " + exp + " is: " + exponent(base, exp));
+        } else {
+            System.out.println("Error: the exp must be a non-negative integer!");
+        }
     }
 
     //3.2
