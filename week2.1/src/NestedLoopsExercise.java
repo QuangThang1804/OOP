@@ -72,8 +72,8 @@ public class NestedLoopsExercise {
         int size = enterNonNegativeNumber(input);
         printCheckerPattern(size);
     }
-    // 2.3
 
+    // 2.3
     public static void printTimeTable(int size) {
         for (int row = 0; row <= size + 1; row++) {
             for (int col = 0; col <= size; col++) {
@@ -299,11 +299,11 @@ public class NestedLoopsExercise {
     }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-//        testSquarePattern(input);
-//        testCheckerPattern(input);
-//        testTimeTable(input);
-//        testTriangularPatternX(input);
-//        testBoxPattern(input);
+        testSquarePattern(input);
+        testCheckerPattern(input);
+        testTimeTable(input);
+        testTriangularPatternX(input);
+        testBoxPattern(input);
         testHillPatternX(input);
     }
 }

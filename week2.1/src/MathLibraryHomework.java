@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class MathLibraryHomework {
-    // 5.1 Can use another solution
+    // 5.1
     public static double computeFactorial(int number) {
         double result = 1;
         for (int i = 1; i <= number; i++) {
@@ -118,8 +118,42 @@ public class MathLibraryHomework {
     }
 
     // 5.5
+    public static int radixNToDecimal(String radixNStr, int radix) {
+        int radixNStrToDecimalNumber = 0;
+        String radixNStrToLower = radixNStr.toLowerCase();
+        int lengthradixNStr = radixNStr.length() - 1;
+        for (int i = 0; i < radixNStrToLower.length(); i++) {
+            if (radixNStrToLower.charAt(i) >= 48 && radixNStrToLower.charAt(i) <= 57 + radix - radix) {
+                radixNStrToDecimalNumber += (int) ((radixNStrToLower.charAt(i) - 48) * Math.pow(radix, lengthradixNStr));
+            } else if (radixNStrToLower.charAt(i) >= 97 && radixNStrToLower.charAt(i) <= 102 + radix - radix) {
+                radixNStrToDecimalNumber += (int) ((radixNStrToLower.charAt(i) - 87) * Math.pow(radix, lengthradixNStr));
+            }
+            lengthradixNStr--;
+        }
+        return radixNStrToDecimalNumber;
+    }
+
+    public static String decimalToRadixN(int decimalNumber, int radix) {
+        StringBuilder decimalToRadixNStr = new StringBuilder();
+        int copyOfPosInt = decimalNumber;
+        int quotient;
+        int remainder;
+        char intToChar;
+        while (copyOfPosInt != 0) {
+            quotient = copyOfPosInt / radix;
+            remainder = copyOfPosInt % radix;
+            if (remainder >= 0 && remainder <= 9) {
+                decimalToRadixNStr.append(remainder);
+            } else {
+                intToChar = (char) (remainder + 55);
+                decimalToRadixNStr.append(intToChar);
+            }
+            copyOfPosInt = quotient;
+        }
+        return decimalToRadixNStr.reverse().toString();
+    }
     public static String toRadix(String inStr, int inRadix, int outRadix) {
-        return "";
+        return decimalToRadixN(radixNToDecimal(inStr, inRadix), outRadix);
     }
 
     public static void testToRadix(Scanner input) {
@@ -129,16 +163,16 @@ public class MathLibraryHomework {
         int inRadix = input.nextInt();
         System.out.print("Enter the output radix: ");
         int outRadix = input.nextInt();
-        System.out.printf("\"%s\" in radix %d is \"%s \" in radix %d", inStr, inRadix,
+        System.out.printf("\"%s\" in radix %d is \"%s\" in radix %d", inStr, inRadix,
                 toRadix(inStr, inRadix, outRadix), outRadix);
     }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-//        testTrigonometric(input);
-//        testSpecialSeries(input);
-//        testFactorialInt();
-//        testFibonacciInt();
+        testTrigonometric(input);
+        testSpecialSeries(input);
+        testFactorialInt();
+        testFibonacciInt();
         testToRadix(input);
     }
 }

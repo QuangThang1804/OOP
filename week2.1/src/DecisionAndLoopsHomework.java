@@ -30,7 +30,6 @@ public class DecisionAndLoopsHomework {
     public static String guessWord() throws FileNotFoundException {
         String url = "C:\\Users\\HT-Com\\Documents\\Senior-year\\Semester2\\OOP\\week2.1\\src\\words.txt";
         ArrayList<String> arrWords = new ArrayList<>();
-        // Đọc dữ liệu từ File với File và FileReader
         File file = new File(url);
         BufferedReader reader = new BufferedReader(new FileReader(file));
 
@@ -111,7 +110,7 @@ public class DecisionAndLoopsHomework {
 
     public static void main(String[] args) throws FileNotFoundException {
         Scanner input = new Scanner(System.in);
-//        generateNumber(input, generateNumber());
+        generateNumber(input, generateNumber());
         guessWord(input);
     }
 }

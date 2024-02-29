@@ -49,8 +49,6 @@ public class StringAndCharacterHomework {
                 inStrWith.append(inStrLowerCase.charAt(idx));
             }
         }
-        String temp = inStrWith.toString();
-
         return isPalindromicWord(inStrWith.toString());
     }
 
@@ -67,8 +65,8 @@ public class StringAndCharacterHomework {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-//        testExchangeCipher(input);
-//        testPalindromicWord(input);
+        testExchangeCipher(input);
+        testPalindromicWord(input);
         testPalindromicPhrase(input);
     }
 
