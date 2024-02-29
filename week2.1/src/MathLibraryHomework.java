@@ -75,10 +75,70 @@ public class MathLibraryHomework {
         System.out.println("Result of special series" + " is " + specialSeries(x, numTerms));
     }
 
+    // 5.3
+    public static int factorialInt(int number) {
+        int resultOfFacNum = 1;
+        for (int i = 1; i <= number; i++) {
+            resultOfFacNum *= i;
+        }
+        return resultOfFacNum;
+    }
+
+    public static void testFactorialInt() {
+        for (int num = 1; num < Integer.MAX_VALUE; num++) {
+            if ((Integer.MAX_VALUE / factorialInt(num - 1)) < num) {
+                System.out.println("The factorial of " + num + " is out of range");
+                break;
+            } else {
+                System.out.println("The factorial of " + num + " is " + factorialInt(num));
+            }
+        }
+    }
+
+    // 5.4
+    public static int computeFinonacciInt(int number) {
+        int result;
+        if (number == 0 || number == 1) {
+            result = 1;
+        } else {
+            result = computeFinonacciInt(number - 2) + computeFinonacciInt(number - 1);
+        }
+        return result;
+    }
+
+    public static void testFibonacciInt() {
+        for (int num = 0; num < Integer.MAX_VALUE; num++) {
+            if (num < 2 || Integer.MAX_VALUE - computeFinonacciInt(num - 1) >= computeFinonacciInt(num - 2)) {
+                System.out.println("F(" + num + ") = " + computeFinonacciInt(num));
+            } else {
+                System.out.println("F(" + (num) + ") is out of range of int");
+                break;
+            }
+        }
+    }
+
+    // 5.5
+    public static String toRadix(String inStr, int inRadix, int outRadix) {
+        return "";
+    }
+
+    public static void testToRadix(Scanner input) {
+        System.out.print("Enter a number and radix: ");
+        String inStr = input.nextLine();
+        System.out.print("Enter the input radix: ");
+        int inRadix = input.nextInt();
+        System.out.print("Enter the output radix: ");
+        int outRadix = input.nextInt();
+        System.out.printf("\"%s\" in radix %d is \"%s \" in radix %d", inStr, inRadix,
+                toRadix(inStr, inRadix, outRadix), outRadix);
+    }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 //        testTrigonometric(input);
-        testSpecialSeries(input);
+//        testSpecialSeries(input);
+//        testFactorialInt();
+//        testFibonacciInt();
+        testToRadix(input);
     }
 }
