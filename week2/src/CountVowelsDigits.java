@@ -1,3 +1,5 @@
+package hus.week2.src;
+
 // 1.2
 public class CountVowelsDigits {
     public static String [] vowels = {"a", "e", "i", "o", "u"};

@@ -123,9 +123,9 @@ public class MathLibraryHomework {
         String radixNStrToLower = radixNStr.toLowerCase();
         int lengthradixNStr = radixNStr.length() - 1;
         for (int i = 0; i < radixNStrToLower.length(); i++) {
-            if (radixNStrToLower.charAt(i) >= 48 && radixNStrToLower.charAt(i) <= 57 + radix - radix) {
+            if (radixNStrToLower.charAt(i) >= 48 && radixNStrToLower.charAt(i) <= 57) {
                 radixNStrToDecimalNumber += (int) ((radixNStrToLower.charAt(i) - 48) * Math.pow(radix, lengthradixNStr));
-            } else if (radixNStrToLower.charAt(i) >= 97 && radixNStrToLower.charAt(i) <= 102 + radix - radix) {
+            } else if (radixNStrToLower.charAt(i) >= 97 && radixNStrToLower.charAt(i) <= 102) {
                 radixNStrToDecimalNumber += (int) ((radixNStrToLower.charAt(i) - 87) * Math.pow(radix, lengthradixNStr));
             }
             lengthradixNStr--;

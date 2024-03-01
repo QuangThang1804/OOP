@@ -225,7 +225,8 @@ public class StringAndCharacterExercise {
         int decimalNumber = 0;
         int lengthOfBinStr = binStr.length() - 1;
         for (int i = 0; i < binStr.length(); i++) {
-            decimalNumber += (int) ((binStr.charAt(i) - 48) * Math.pow(2, lengthOfBinStr));
+            decimalNumber += (int) ((binStr.charAt(i) - 48)
+                    * Math.pow(2, lengthOfBinStr));
             lengthOfBinStr--;
         }
 
@@ -318,14 +319,23 @@ public class StringAndCharacterExercise {
         String radixNStrToLower = radixNStr.toLowerCase();
         int lengthradixNStr = radixNStr.length() - 1;
         for (int i = 0; i < radixNStrToLower.length(); i++) {
-            if (radixNStrToLower.charAt(i) >= 48 && radixNStrToLower.charAt(i) <= 57 + radix - 16) {
+            if (radixNStrToLower.charAt(i) >= 48 && radixNStrToLower.charAt(i) <= 57) {
                 radixNStrToDecimalNumber += (int) ((radixNStrToLower.charAt(i) - 48) * Math.pow(radix, lengthradixNStr));
-            } else if (radixNStrToLower.charAt(i) >= 97 && radixNStrToLower.charAt(i) <= 102 + radix - 16) {
+            } else if (radixNStrToLower.charAt(i) >= 97 && radixNStrToLower.charAt(i) <= 102) {
                 radixNStrToDecimalNumber += (int) ((radixNStrToLower.charAt(i) - 87) * Math.pow(radix, lengthradixNStr));
             }
             lengthradixNStr--;
         }
         return radixNStrToDecimalNumber;
+    }
+
+    public static int evalPolyUsingHorner(int[] poly, int x) {
+        // poly = a0 + a1x + a2x^2 + ... + anx^n
+        int polyValue = 0;
+        for (int i = 0; i < poly.length; i++) {
+            polyValue = polyValue * x + poly[i];
+        }
+        return polyValue;
     }
 
     public static void testRadixNToDecimal(Scanner input) {
@@ -339,24 +349,24 @@ public class StringAndCharacterExercise {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Ex1.1: ");
-        testReverseString(input);
-        System.out.println("Ex1.2: ");
-        testCountVowelsDigits(input);
-        System.out.println("Ex1.3: ");
-        testPhoneKeyPad(input);
-        System.out.println("Ex1.4: ");
-        testCipherCaesarCode(input);
-        System.out.println("Ex1.5: ");
-        testDecipherCaesarCode(input);
-        System.out.println("Ex1.6: ");
-        testHexString(input);
-        System.out.println("Ex1.7: ");
-        testBinaryToDecimal(input);
-        System.out.println("Ex1.8: ");
-        testHexadecimalToDecimal(input);
-        System.out.println("Ex1.9: ");
-        testOctalToDecimal(input);
+//        System.out.println("Ex1.1: ");
+//        testReverseString(input);
+//        System.out.println("Ex1.2: ");
+//        testCountVowelsDigits(input);
+//        System.out.println("Ex1.3: ");
+//        testPhoneKeyPad(input);
+//        System.out.println("Ex1.4: ");
+//        testCipherCaesarCode(input);
+//        System.out.println("Ex1.5: ");
+//        testDecipherCaesarCode(input);
+//        System.out.println("Ex1.6: ");
+//        testHexString(input);
+//        System.out.println("Ex1.7: ");
+//        testBinaryToDecimal(input);
+//        System.out.println("Ex1.8: ");
+//        testHexadecimalToDecimal(input);
+//        System.out.println("Ex1.9: ");
+//        testOctalToDecimal(input);
         System.out.println("Ex1.10: ");
         testRadixNToDecimal(input);
     }

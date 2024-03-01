@@ -1,3 +1,5 @@
+package hus.week2.src;
+
 import java.util.Scanner;
 
 public class CheckerPattern {
