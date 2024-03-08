@@ -47,7 +47,8 @@ public class PerfectNumberList {
         System.out.println("These numbers are neither deficient not perfect:");
         System.out.println(listNumNotPerfectAndDef.toString());
         System.out.printf("[%d numbers found (%.2f%%)]\n",
-                countNumNotPerfectAndDeficient, ((double) (countNumNotPerfectAndDeficient) / boundNum * 100));
+                countNumNotPerfectAndDeficient,
+                ((double) (countNumNotPerfectAndDeficient) / boundNum * 100));
     }
 
     public static void main(String[] args) {

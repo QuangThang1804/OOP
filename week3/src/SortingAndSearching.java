@@ -65,7 +65,6 @@ public class SortingAndSearching {
     }
 
     public static boolean binarySearch(int[] sortArr, int key, int fromIdx, int toIdx) {
-//        boolean containsKey = false;
         int middleIdx;
         while (fromIdx != toIdx - 1) {
             middleIdx = (fromIdx + toIdx) / 2;
@@ -85,50 +84,19 @@ public class SortingAndSearching {
         int[] array = generateArray(10);
         System.out.println("Array before sort");
         printArray(array);
-        sortArray(array);
         System.out.println("Array after sort");
+        sortArray(array);
         printArray(array);
         int key = (int) (Math.random() * 20);
         System.out.println("Key is " + key);
         if (binarySearch(array, key, 0, array.length)) {
-            System.out.println("Key is in array");
+            System.out.println("Key is found in array");
         } else {
-            System.out.println("Key is not in array");
+            System.out.println("Key is not found in array");
         }
     }
 
     // 2.3
-    public static boolean checkEquals(int[] array1, int[] array2) {
-        boolean isEquals = true;
-        if (array1.length != array2.length) {
-            isEquals = false;
-        } else {
-            for (int i = 0; i < array1.length; i++) {
-                if (array1[i] != array2[i]) {
-                    isEquals = false;
-                    break;
-                }
-            }
-        }
-        return isEquals;
-    }
-//    public static void bubbleSort(int[] array) {
-//        System.out.println("Array before sort");
-//        printArray(array);
-//        System.out.println("Array afer sort");
-//        int temp;
-//        for (int i = 0; i < array.length; i++) {
-//            for (int j = 0; j < array.length - 1; j++) {
-//                if (array[j] > array[j + 1]) {
-//                    temp = array[j];
-//                    array[j] = array[j + 1];
-//                    array[j + 1] = temp;
-//                }
-//                printArray(array);
-//            }
-//        }
-//    }
-
     public static void bubbleSort(int[] array) {
         int n = array.length;
         boolean swapped;
@@ -150,6 +118,9 @@ public class SortingAndSearching {
 
     public static void testBubbleSort() {
         int[] array = generateArray(5);
+        System.out.println("Array before sort");
+        printArray(array);
+        System.out.println("Array after sort");
         bubbleSort(array);
     }
 
@@ -167,13 +138,15 @@ public class SortingAndSearching {
             temp = array[i];
             array[i] = array[minIdx];
             array[minIdx] = temp;
-            printArray(array);
         }
-
+        printArray(array);
     }
 
     public static void testSelectionSort() {
         int[] array = generateArray(5);
+        System.out.println("Array before sort");
+        printArray(array);
+        System.out.println("Array after sort");
         selectionSort(array);
     }
 
@@ -200,11 +173,10 @@ public class SortingAndSearching {
         insertionSort(array);
     }
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-//        testLinearSearch();
+        testLinearSearch();
         testBinarySearch();
-//        testBubbleSort();
-//        testSelectionSort();
-//        testInsertionSort();
+        testBubbleSort();
+        testSelectionSort();
+        testInsertionSort();
     }
 }
