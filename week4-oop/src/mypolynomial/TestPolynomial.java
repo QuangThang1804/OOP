@@ -2,10 +2,10 @@ package mypolynomial;
 
 public class TestPolynomial {
     public static void main(String[] args) {
-        MyPolynomial myPolynomial1 = new MyPolynomial(1, -5, 4, -1, 2, 3);
+        MyPolynomial myPolynomial1 = new MyPolynomial(-1, 2, 3);
         System.out.println(myPolynomial1.toString());
 
-        MyPolynomial myPolynomial2 = new MyPolynomial(-3, 1, -2, 3, -1, 2);
+        MyPolynomial myPolynomial2 = new MyPolynomial(-1, 2, 0, 0);
         System.out.println(myPolynomial2);
 
         System.out.println("degree is " + myPolynomial1.getDegree());

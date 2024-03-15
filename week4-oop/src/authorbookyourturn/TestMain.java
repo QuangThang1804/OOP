@@ -3,7 +3,7 @@ package authorbookyourturn;
 public class TestMain {
     public static void main(String[] args) {
         // Test Author class
-        Author author1 = new Author("Tan Ah Teck", "ahteck@nowhere.com", 'm');
+        Author author1 = new Author("Tan Ah Teck", "ahteck@nowhere.com");
         System.out.println(author1);
 
         author1.setEmail("ahteck@somewhere.com");

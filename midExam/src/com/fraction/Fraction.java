@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Fraction extends Number implements Comparable<Fraction> {
+public class Fraction extends Number {
 
     private int numerator;
     private int denominator;
@@ -14,75 +14,99 @@ public class Fraction extends Number implements Comparable<Fraction> {
      */
 
     public Fraction(Fraction another) {
-        /* TODO */
+        this.numerator = another.getNumerator();
+        this.denominator = another.getDenominator();
     }
 
     public Fraction(int numerator, int denominator) {
-        /* TODO */
+        this.numerator = numerator;
+        this.denominator = denominator;
     }
 
     public Fraction(int numerator) {
-        /* TODO */
+        this.numerator = numerator;
+        this.denominator = 1;
     }
 
     public int getNumerator() {
-        /* TODO */
+        return numerator;
     }
 
     public void setNumerator(int numerator) {
-        /* TODO */
+        this.numerator = numerator;
     }
 
     public int getDenominator() {
-        /* TODO */
+        return denominator;
     }
 
     public void setDenominator(int denominator) {
-        /* TODO */
+        this.denominator = denominator;
     }
 
+    @Override
     public String toString() {
-        /* TODO */
+        return "Fraction[" +
+                + numerator + "/"
+                + denominator +
+                ']';
     }
 
     public boolean equals(Fraction other) {
-        /* TODO */
+        return (this.numerator * other.getDenominator()
+                == this.denominator * other.getDenominator());
     }
 
     public double doubleValue() {
-        /* TODO */
+        return (double) this.numerator / this.denominator;
     }
 
     public float floatValue() {
-        /* TODO */
+        return (float) this.numerator / this.denominator;
     }
 
     public int intValue() {
-        /* TODO */
+        return this.numerator / this.denominator;
     }
 
     public long longValue() {
-        /* TODO */
+        return (long) this.numerator / this.denominator;
     }
 
+
     public int compareTo(Fraction other) {
-        /* TODO */
+        return 0;
     }
 
     private static int gcd(int m, int n) {
-        /* TODO */
+        int gcd = -1;
+        int temp;
+        while (n != 0) {
+            temp = n;
+            n = m % n;
+            m = temp;
+        }
+        return gcd = m;
     }
 
     private void simplify() {
-        /* TODO */
+        int remain = gcd(this.numerator, this.denominator);
+        this.numerator /= remain;
+        this.denominator /= remain;
     }
 
     public Fraction add(Fraction other) {
-        /* TODO */
+        Fraction addFraction = new Fraction(this);
+        addFraction.setNumerator(this.numerator * other.denominator
+                + this.denominator * other.numerator);
+        addFraction.setDenominator(this.denominator * other.getDenominator());
+        return addFraction;
     }
 
     public Fraction add(int other) {
-        /* TODO */
+        Fraction addFraction = new Fraction(this);
+        addFraction.setNumerator(this.numerator + other * this.denominator);
+        return addFraction;
     }
 
     /*
@@ -101,10 +125,15 @@ public class Fraction extends Number implements Comparable<Fraction> {
         myFractions.add(f1);
         myFractions.add(f2);
         myFractions.add(f3);
-        Collections.sort(myFractions);
+//        Collections.sort(myFractions);
 
         for (Fraction f : myFractions) {
             System.out.println(f);
         }
     }
+
+//    @Override
+//    public int compareTo() {
+//        return 0;
+//    }
 }

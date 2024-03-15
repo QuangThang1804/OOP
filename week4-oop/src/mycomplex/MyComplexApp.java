@@ -33,7 +33,7 @@ public class MyComplexApp {
         if (myComplex.isReal()) {
             System.out.println(myComplex + " is a pure real number");
         } else {
-            System.out.println(myComplex + " is NOT pure real number");
+            System.out.println(myComplex + " is NOT a pure real number");
         }
     }
 
@@ -41,7 +41,7 @@ public class MyComplexApp {
         if (myComplex.isImaginary()) {
             System.out.println(myComplex + " is a pure imaginary number");
         } else {
-            System.out.println(myComplex + " is NOT pure imaginary number");
+            System.out.println(myComplex + " is NOT a pure imaginary number");
         }
     }
 
