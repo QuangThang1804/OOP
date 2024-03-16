@@ -1,4 +1,4 @@
-package ballplayer;
+package ballandplayer;
 
 public class Player {
     private int number;
@@ -37,7 +37,7 @@ public class Player {
         if (near(ball)) {
             ball.setXYZ(x + (float) Math.random() * 50,
                     y + (float) Math.random() * 50,
-                    z + (float) Math.random() * 50);
+                    z + (float) Math.random() * 10);
         }
     }
 }

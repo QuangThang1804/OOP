@@ -30,13 +30,13 @@ public class Container {
     }
 
     public boolean collidesWith(Ball ball) {
-        if ((ball.getX() - ball.getRadius() <= this.x1) ||
-                (ball.getX() - ball.getRadius() >= this.x2)) {
+        if ((ball.getX() + ball.getRadius() <= this.x1) ||
+                (ball.getX() + ball.getRadius() >= this.x2)) {
             ball.reflectHorizontal();
             return true;
         }
-        if ((ball.getY() - ball.getRadius() <= this.y1) ||
-                (ball.getY() - ball.getRadius() >= this.y2)) {
+        if ((ball.getY() + ball.getRadius() <= this.y1) ||
+                (ball.getY() + ball.getRadius() >= this.y2)) {
             ball.reflectVertical();
             return true;
         }

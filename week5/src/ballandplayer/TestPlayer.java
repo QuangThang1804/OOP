@@ -1,4 +1,4 @@
-package ballplayer;
+package ballandplayer;
 
 public class TestPlayer {
     public static void main(String[] args) {
@@ -7,6 +7,7 @@ public class TestPlayer {
 
         Player player1 = new Player(1, 30, 30);
         Player player2 = new Player(2, 40, 100);
+        player2.jump(10);
         for (int i = 1; i <= 100; i++) {
             player1.move(2, 2);
             player2.move(2, 2);

@@ -1,4 +1,4 @@
-package ballplayer;
+package ballandplayer;
 
 public class Ball {
     private float x;
@@ -28,11 +28,6 @@ public class Ball {
         this.y = y;
         this.z = z;
     }
-
-//    @Override
-//    Public String toString() {
-//
-//    }
 
     @Override
     public String toString() {
