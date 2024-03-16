@@ -22,7 +22,7 @@ public class MyDate {
 
     public boolean isLeapYear(int year) {
         boolean isLeapYear = false;
-        if (year % 4 == 0 && year % 100 != 0) {
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
             isLeapYear = true;
         }
         return isLeapYear;
@@ -138,7 +138,7 @@ public class MyDate {
             } else if (month < 12) {
                 day = 1;
                 month += 1;
-            } else if (year < 9999){
+            } else if (year < 9999) {
                 day = 1;
                 month = 1;
                 year++;
@@ -150,27 +150,28 @@ public class MyDate {
     }
 
     public MyDate nextMonth() {
-        if (day > DAYS_IN_MONTH[month]) {
-            day = DAYS_IN_MONTH[month];
-        }
         if (month < 12) {
             month++;
-        } else if (year < 9999){
+        } else if (year < 9999) {
             month = 1;
             year++;
         } else {
-            throw  new IllegalStateException("Year out of range!");
+            throw new IllegalStateException("Year out of range!");
+        }
+        if (day > DAYS_IN_MONTH[month]) {
+            day = DAYS_IN_MONTH[month];
         }
         return this;
     }
 
     public MyDate nextYear() {
-        if (isLeapYear(year) && month == 2) {
+        if (isLeapYear(year) && month == 2 && day == 29) {
             day = 28;
         }
 
         if (year < 9999) {
             year++;
+            DAYS_IN_MONTH[1] = 28;
         } else {
             throw new IllegalStateException("Year out of range!");
         }
@@ -180,7 +181,7 @@ public class MyDate {
     public MyDate previousDay() {
         if (day > 1) {
             day--;
-        } else if (month > 1){
+        } else if (month > 1) {
             day = DAYS_IN_MONTH[month - 1];
             month--;
         } else if (year > 1) {
@@ -194,27 +195,27 @@ public class MyDate {
     }
 
     public MyDate previousMonth() {
-        if (day > DAYS_IN_MONTH[month - 2]) {
-            day = DAYS_IN_MONTH[month - 2];
-        }
-
         if (month > 1) {
             month--;
-        } else if (year > 1){
+        } else if (year > 1) {
             month = 12;
             year--;
         } else {
             throw new IllegalStateException("Year out of range!");
         }
+        if (day > DAYS_IN_MONTH[month - 1]) {
+            day = DAYS_IN_MONTH[month - 1];
+        }
         return this;
     }
 
     public MyDate previousYear() {
-        if (isLeapYear(year)) {
+        if (isLeapYear(year) && month == 2 && day == 29) {
             day = 28;
         }
         if (year > 1) {
             year--;
+            DAYS_IN_MONTH[1] = 28;
         } else {
             throw new IllegalStateException("Year out of range!");
         }
