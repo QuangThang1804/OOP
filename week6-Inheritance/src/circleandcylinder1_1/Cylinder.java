@@ -1,4 +1,4 @@
-package circlecylinder;
+package circleandcylinder1_1;
 
 public class Cylinder extends Circle {
     private double height;
@@ -8,9 +8,8 @@ public class Cylinder extends Circle {
         height = 1.0;
     }
 
-    public Cylinder(double height) {
-        super();
-        this.height = height;
+    public Cylinder(double radius) {
+        super(radius);
     }
 
     public Cylinder(double radius, double height) {
@@ -31,6 +30,7 @@ public class Cylinder extends Circle {
         this.height = height;
     }
 
+    @Override
     public double getArea() {
         return 2 * super.getArea() + 2 * Math.PI * this.getRadius() * height;
     }

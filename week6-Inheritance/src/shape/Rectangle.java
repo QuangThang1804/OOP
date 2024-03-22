@@ -10,7 +10,7 @@ public class Rectangle extends Shape{
         width = 1.0;
     }
 
-    public Rectangle(double height, double width) {
+    public Rectangle(double length, double width) {
         this.length = length;
         this.width = width;
     }
