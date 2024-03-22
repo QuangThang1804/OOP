@@ -22,6 +22,5 @@ public class TestMain {
         staff1.setSchool("HUS & HUST");
         staff1.setPay(20000);
         System.out.println(staff1);
-
     }
 }

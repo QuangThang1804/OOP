@@ -5,10 +5,6 @@ import java.util.Scanner;
 public class MyComplexApp {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-//        System.out.print("Enter complex number 1 (real and imaginary part): ");
-//        MyComplex myComplex1 = new MyComplex(input.nextDouble(), input.nextDouble());
-//        System.out.print("Enter complex number 2 (real and imaginary part): ");
-//        MyComplex myComplex2 = new MyComplex(input.nextDouble(), input.nextDouble());
         MyComplex myComplex1 = enterComplex(input, 1);
         MyComplex myComplex2 = enterComplex(input, 2);
 

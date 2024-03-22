@@ -171,7 +171,9 @@ public class MyDate {
 
         if (year < 9999) {
             year++;
-            DAYS_IN_MONTH[1] = 28;
+            if (isLeapYear(year)) {
+                DAYS_IN_MONTH[1] = 29;
+            }
         } else {
             throw new IllegalStateException("Year out of range!");
         }
@@ -215,7 +217,9 @@ public class MyDate {
         }
         if (year > 1) {
             year--;
-            DAYS_IN_MONTH[1] = 28;
+            if (isLeapYear(year)) {
+                DAYS_IN_MONTH[1] = 29;
+            }
         } else {
             throw new IllegalStateException("Year out of range!");
         }

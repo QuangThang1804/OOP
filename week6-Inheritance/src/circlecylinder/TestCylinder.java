@@ -21,6 +21,8 @@ public class TestCylinder {
                 + " radius=" + cylinder3.getRadius()
                 + " height=" + cylinder3.getHeight()
                 + " base area=" + cylinder3.getArea()
-                + " volume=" + cylinder3.getVolume());
+                + " volume=" + cylinder3.getVolume()
+                + " area=" + cylinder3.getArea());
+        System.out.println(cylinder3);
     }
 }

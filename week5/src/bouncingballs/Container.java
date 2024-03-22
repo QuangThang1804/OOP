@@ -29,17 +29,14 @@ public class Container {
         return x2 - x1 + 1;
     }
 
-    public boolean collidesWith(Ball ball) {
+    public void collidesWith(Ball ball) {
         if ((ball.getX() + ball.getRadius() <= this.x1) ||
                 (ball.getX() + ball.getRadius() >= this.x2)) {
             ball.reflectHorizontal();
-            return true;
         }
         if ((ball.getY() + ball.getRadius() <= this.y1) ||
                 (ball.getY() + ball.getRadius() >= this.y2)) {
             ball.reflectVertical();
-            return true;
         }
-        return true;
     }
 }
