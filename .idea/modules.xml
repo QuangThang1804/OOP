@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OOP.iml" filepath="$PROJECT_DIR$/OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week7-Abstract/Week7-Abstract.iml" filepath="$PROJECT_DIR$/Week7-Abstract/Week7-Abstract.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop/lap11/factory/builderpattern/builderpattern.iml" filepath="$PROJECT_DIR$/oop/lap11/factory/builderpattern/builderpattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop/lap11/factory/iteratirpattern/iteratirpattern.iml" filepath="$PROJECT_DIR$/oop/lap11/factory/iteratirpattern/iteratirpattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/midExam/midExam.iml" filepath="$PROJECT_DIR$/midExam/midExam.iml" />
