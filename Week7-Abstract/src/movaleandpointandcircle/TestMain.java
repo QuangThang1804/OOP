@@ -1,6 +1,6 @@
 package movaleandpointandcircle;
 
-import movableandmovablepoint.MovablePoint;
+import movableandpoint.MovablePoint;
 
 public class TestMain {
     public static void main(String[] args) {

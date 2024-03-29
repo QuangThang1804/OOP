@@ -17,7 +17,7 @@ public class TestAnimal {
         Animal animal3 = new BigDog();
         animal3.greeting();
         // Animal animal4 = new Animal();
-        // error because interface can't generate instructor
+        // error because abstract class can't generate the instructor
 
         // Downcast
         Dog dog2 = (Dog) animal2;

@@ -1,4 +1,4 @@
-package shape1_1;
+package shape;
 
 public class TestMain {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class TestMain {
         System.out.println(shape1.getArea());
         System.out.println(shape1.getPerimeter());
         System.out.println(shape1.getColor());
-//        System.out.println(shape1.getRadius());
+        // System.out.println(shape1.getRadius());
         // it's has error because superclass Shape doesn't have method getRadius()
         // fix
         if (shape1 instanceof Circle) {
@@ -24,7 +24,7 @@ public class TestMain {
         }
 
 //        Shape shape2 = new Shape();
-        // error because abstract class don't allow to generate object
+        // error because abstract class don't allow to generate an instructor
 
         Shape shape3 = new Rectangle("red", false, 1.0, 2.0);
         System.out.println(shape3);
@@ -74,4 +74,23 @@ public class TestMain {
         System.out.println(square1.getSide());
         System.out.println(square1.getLength());
     }
+
+//    Question: What is the usage of the abstract method and abstract class?
+//    Answer:
+//    Abstract Method:
+//    - An abstract method is a method declared without an implementation (body).
+//    It only has a signature specifying the return type and parameters.
+//    - The purpose is to outline a specific functionality that must be implemented by subclasses
+//    that inherit from the abstract class.
+//    - Abstract methods cannot be used directly and are essentially forcing subclasses to
+//    provide their own version of the functionality.
+//
+//    Abstract Class:
+//    - An abstract class is a class that is declared with the abstract keyword.
+//    It can contain a mix of abstract and regular methods.
+//    - The key aspect is that abstract classes cannot be directly instantiated
+//    (It mean that we can't create objects of them).
+//    - The purpose of an abstract class is to serve as a blueprint for subclasses.
+//    It defines the overall structure and common functionalities that subclasses
+//    must adhere to or implement
 }

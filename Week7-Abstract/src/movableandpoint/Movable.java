@@ -1,4 +1,4 @@
-package movableandmovablepoint;
+package movableandpoint;
 
 public interface Movable {
     public void moveUp();
