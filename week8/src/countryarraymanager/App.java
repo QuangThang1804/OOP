@@ -48,7 +48,6 @@ public class App {
         testSortIncreasingByGdp();
         System.out.println("\nTest sort Increasing By Population");
         testSortIncreasingByPopulation();
-        /* TODO: write code to test program */
     }
 
     public static void readListData(String filePath) {
@@ -119,10 +118,6 @@ public class App {
                         countryManager.append(africaCountry);
                         break;
                 }
-                /*
-                 * TODO: create Country and append countries into
-                 * CountryArrayManager here.
-                 */
             }
         } catch (IOException e) {
             e.printStackTrace();
