@@ -90,7 +90,5 @@ public class TestMain {
 //    It can contain a mix of abstract and regular methods.
 //    - The key aspect is that abstract classes cannot be directly instantiated
 //    (It mean that we can't create objects of them).
-//    - The purpose of an abstract class is to serve as a blueprint for subclasses.
-//    It defines the overall structure and common functionalities that subclasses
-//    must adhere to or implement
+
 }

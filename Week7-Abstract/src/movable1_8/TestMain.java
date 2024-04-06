@@ -27,10 +27,8 @@ public class TestMain {
 //    Abstract Class:
 //    - An abstract class serves as a blueprint for subclasses.
 //    It can contain both abstract and non-abstract methods.
-//    - Abstract classes cannot be directly instantiated
+//    - Abstract classes cannot be directly instantiated,
 //    it means that we can't create objects of them.
 //    - Subclasses inherit the abstract class's methods and fields,
 //    and can implement for the abstract methods.
-//    - Abstract classes can provide some default functionality
-//    along with the blueprint for subclasses.
 }
