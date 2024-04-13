@@ -28,4 +28,9 @@ public class MyLinkedListNode {
     public void setNext(MyLinkedListNode nextValue) {
         this.next = nextValue;
     }
+
+    @Override
+    public String toString() {
+        return payload.toString();
+    }
 }

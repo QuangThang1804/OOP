@@ -39,7 +39,7 @@ public class MyLinkedList extends MyAbstractList {
     public void remove(int index) {
         checkBoundaries(index, size);
         if (index == 1) {
-            head = null;
+            head = head.getNext();
         } else {
             MyLinkedListNode current = getNodeByIndex(index - 1);
             current.setNext(new MyLinkedListNode(current.getNext()));

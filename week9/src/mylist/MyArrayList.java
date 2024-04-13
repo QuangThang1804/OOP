@@ -23,7 +23,7 @@ public class MyArrayList extends MyAbstractList {
 
     @Override
     public void add(Object o, int index) {
-        checkBoundaries(index, size - 1);
+        checkBoundaries(index, size);
         if (size >= elements.length - 1) {
             enlarge();
         }
