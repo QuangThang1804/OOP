@@ -153,7 +153,7 @@ public class App {
     }
 
     public static void init() {
-        String filePath = "D:\\Documents\\Senior-year\\Semester2\\OOP\\week8\\src\\data\\countries.csv";
+        String filePath = "week8/src/data/countries.csv";
         readListData(filePath);
     }
 

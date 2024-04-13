@@ -15,7 +15,7 @@ public class Sets {
 
     public static Set<Integer> unionManual(Set<Integer> first, Set<Integer> second) {
         Set<Integer> unionSet = new HashSet<>();
-        for (Integer value: first) {
+        for (Integer value : first) {
             unionSet.add(value);
         }
         for (Integer value : second) {
@@ -105,38 +105,5 @@ public class Sets {
 
     public static int getGreater(TreeSet<Integer> source, int value) {
         return source.higher(value);
-    }
-
-    public static void main(String[] args) {
-        Set<Integer> first = new HashSet<>(Arrays.asList(1, 3, 2, 1, 4));
-        Set<Integer> second = new HashSet<>(Arrays.asList(8, 3, 5, 1, 4));
-
-        Set<Integer> intersectionManual = intersectionManual(first, second);
-        System.out.println(intersectionManual.toString());
-        Set<Integer> unionManual = unionManual(first, second);
-        System.out.println(unionManual.toString());
-
-        Set<Integer> intersection = intersection(first, second);
-        System.out.println(intersection.toString());
-        Set<Integer> union = union(first, second);
-        System.out.println(union.toString());
-
-        List<Integer> list = toList(first);
-        System.out.println(list.toString());
-
-        List<Integer> list1 = Arrays.asList(1, 2, 5, 7, 5, 2, 0, 9);
-        List<Integer> listRemoveDuplicatesManual = removeDuplicatesManual(list1);
-        System.out.println(listRemoveDuplicatesManual.toString());
-        List<Integer> listRemoveDuplicates = removeDuplicates(list1);
-        System.out.println(listRemoveDuplicates.toString());
-
-        System.out.println(firstRecurringCharacter("abcacb"));
-        System.out.println(allRecurringChars("abccbadeffde"));
-
-        Integer[] setToArr = toArray(first);
-        TreeSet<Integer> set = new TreeSet<>(Arrays.asList(1, 2, 5, 7, 5, 2, 0, 9));
-        System.out.println(getFirst(set));
-        System.out.println(getLast(set));
-        System.out.println(getGreater(set, 6));
     }
 }

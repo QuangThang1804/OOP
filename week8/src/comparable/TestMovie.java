@@ -20,9 +20,9 @@ public class TestMovie {
         do {
             swapped = false;
             for (int i = 1; i < n; i++) {
-                if (list.get(i-1).compareTo(list.get(i)) > 0) {
-                    temp = list.get(i-1);
-                    list.set(i-1, list.get(i));
+                if (list.get(i - 1).compareTo(list.get(i)) > 0) {
+                    temp = list.get(i - 1);
+                    list.set(i - 1, list.get(i));
                     list.set(i, temp);
                     swapped = true;
                 }
@@ -31,7 +31,7 @@ public class TestMovie {
         } while (swapped);
 
         System.out.println("Movies after sorting");
-        for (Movie movie: list) {
+        for (Movie movie : list) {
             System.out.println(movie.getName() + " " +
                     movie.getRating() + " " +
                     movie.getYear());

@@ -73,39 +73,4 @@ public class Lists {
         list.addFirst(value);
         list.addLast(value);
     }
-
-    public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
-        insertFirst(list, 0);
-        System.out.println(list.toString());
-        insertLast(list,1000);
-        System.out.println(list.toString());
-        list.add(2);
-        list.add(3);
-        list.add(4);
-        list.add(666);
-        System.out.println(list.toString());
-        replace(list, 10);
-        System.out.println(list.toString());
-        removeThird(list);
-        System.out.println(list.toString());
-        removeEvil(list);
-        System.out.println(list.toString());
-        List<Integer> listSquare = generateSquare();
-        System.out.println(listSquare.toString());
-        if (contains(list, 2)) {
-            System.out.println("list contains 2");
-        } else {
-            System.out.println("list does not contain 2");
-        }
-        copy(list, listSquare);
-        System.out.println(listSquare.toString());
-        reverse(listSquare);
-        System.out.println(listSquare.toString());
-        reverseManual(listSquare);
-        System.out.println(listSquare);
-        LinkedList<Integer> newList = new LinkedList<>();
-        insetBeginningEnd(newList, 5);
-        System.out.println(newList.toString());
-    }
 }

@@ -1,6 +1,6 @@
 package comparator;
 
-public class Movie implements Comparable<Movie>{
+public class Movie implements Comparable<Movie> {
     private String name;
     private double rating;
     private int year;

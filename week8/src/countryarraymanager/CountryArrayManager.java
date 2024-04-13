@@ -68,7 +68,7 @@ public class CountryArrayManager {
         }
 
         for (int i = this.length; i > index; i--) {
-            this.countries[i] = this.countries[i-1];
+            this.countries[i] = this.countries[i - 1];
         }
 
         this.countries[index] = country;
@@ -99,8 +99,9 @@ public class CountryArrayManager {
     }
 
     /**
-     * Sort the countries in order of increasing population 
-     *  using selection sort algorithm.
+     * Sort the countries in order of increasing population
+     * using selection sort algorithm.
+     *
      * @return array of increasing population countries.
      */
     public Country[] sortByIncreasingPopulation() {
@@ -123,8 +124,9 @@ public class CountryArrayManager {
     }
 
     /**
-     * Sort the countries in order of decreasing population 
-     *  using selection sort algorithm.
+     * Sort the countries in order of decreasing population
+     * using selection sort algorithm.
+     *
      * @return array of decreasing population countries.
      */
     public Country[] sortByDecreasingPopulation() {
@@ -147,8 +149,9 @@ public class CountryArrayManager {
     }
 
     /**
-     * Sort the countries in order of increasing area 
-     *  using bubble sort algorithm.
+     * Sort the countries in order of increasing area
+     * using bubble sort algorithm.
+     *
      * @return array of increasing area countries.
      */
     public Country[] sortByIncreasingArea() {
@@ -174,8 +177,9 @@ public class CountryArrayManager {
     }
 
     /**
-     * Sort the countries in order of decreasing area 
-     *  using bubble sort algorithm.
+     * Sort the countries in order of decreasing area
+     * using bubble sort algorithm.
+     *
      * @return array of increasing area countries.
      */
     public Country[] sortByDecreasingArea() {
@@ -201,8 +205,9 @@ public class CountryArrayManager {
     }
 
     /**
-     * Sort the countries in order of increasing GDP 
-     *  using insertion sort algorithm.
+     * Sort the countries in order of increasing GDP
+     * using insertion sort algorithm.
+     *
      * @return array of increasing GDP countries.
      */
     public Country[] sortByIncreasingGdp() {
@@ -223,8 +228,9 @@ public class CountryArrayManager {
     }
 
     /**
-     * Sort the countries in order of increasing GDP 
-     *  sing insertion sort algorithm.
+     * Sort the countries in order of increasing GDP
+     * sing insertion sort algorithm.
+     *
      * @return array of increasing insertion countries.
      */
     public Country[] sortByDecreasingGdp() {
@@ -253,10 +259,8 @@ public class CountryArrayManager {
                 newArray[idxNewArr] = this.countries[i];
                 idxNewArr++;
             }
-//            if (this.countries[i].getName().equals("Africa")) {
-//            }
         }
-        AfricaCountry[] africaCountries = new AfricaCountry[idxNewArr];
+        AfricaCountry[] africaCountries = new AfricaCountry[idxNewArr + 1];
         for (int i = 0; i < idxNewArr; i++) {
             africaCountries[i] = (AfricaCountry) newArray[i];
         }
@@ -283,7 +287,7 @@ public class CountryArrayManager {
         Country[] newArray = new Country[this.length];
         int idxNewArr = 0;
         for (int i = 0; i < this.countries.length; i++) {
-            if (this.countries[i] instanceof EuropeCountry){
+            if (this.countries[i] instanceof EuropeCountry) {
                 newArray[idxNewArr] = this.countries[i];
                 idxNewArr++;
             }
@@ -408,7 +412,7 @@ public class CountryArrayManager {
                         .append(" ");
             }
         }
-        
+
         return codeOfCountries.toString().trim() + "]";
     }
 
