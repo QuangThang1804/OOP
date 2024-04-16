@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Fraction extends Number {
+public class Fraction extends Number implements Comparable<Fraction> {
 
     private int numerator;
     private int denominator;
@@ -73,11 +73,6 @@ public class Fraction extends Number {
         return (long) this.numerator / this.denominator;
     }
 
-
-    public int compareTo(Fraction other) {
-        return 0;
-    }
-
     private static int gcd(int m, int n) {
         int gcd = -1;
         int temp;
@@ -132,8 +127,16 @@ public class Fraction extends Number {
         }
     }
 
-//    @Override
-//    public int compareTo() {
-//        return 0;
-//    }
+    @Override
+    public int compareTo(Fraction fraction) {
+        if (this.numerator * fraction.getDenominator()
+                - fraction.getNumerator() * this.getDenominator() == 0) {
+            return 0;
+        } else if (this.numerator * fraction.getDenominator()
+                - fraction.getNumerator() * this.getDenominator() > 0) {
+            return 1;
+        } else {
+            return -1;
+        }
+    }
 }

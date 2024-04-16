@@ -18,7 +18,6 @@ public class MyArrayList extends MyAbstractList {
             enlarge();
         }
         elements[size++] = o;
-
     }
 
     @Override
@@ -36,7 +35,7 @@ public class MyArrayList extends MyAbstractList {
 
     @Override
     public void remove(int index) {
-        checkBoundaries(index, size -1 );
+        checkBoundaries(index, size - 1);
         for (int i = index; i < size - 1; i++) {
             elements[i] = elements[i + 1];
         }
@@ -45,7 +44,7 @@ public class MyArrayList extends MyAbstractList {
 
     @Override
     public Object get(int index) {
-        checkBoundaries(index, size -1 );
+        checkBoundaries(index, size - 1);
         return elements[index];
     }
 

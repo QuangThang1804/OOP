@@ -5,5 +5,5 @@ public interface Poly {
     public int[] coefficients();
     public int degree();
     public Poly derivative();
-    public double evaluate();
+    public double evaluate(double x);
 }

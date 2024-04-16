@@ -1,7 +1,8 @@
 package library;
 
-public class Dvd extends Item{
+public class Dvd extends Item {
     private int duration;
+
     public Dvd(String title, int year, int duration) {
         super(title, year);
         this.duration = duration;

@@ -1,6 +1,6 @@
 package mylist;
 
-public abstract class MyAbstractList implements MyList{
+public abstract class MyAbstractList implements MyList {
     public MyAbstractList() {
     }
 

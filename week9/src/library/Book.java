@@ -1,6 +1,6 @@
 package library;
 
-public class Book extends Item{
+public class Book extends Item {
     private int pages;
 
     public Book(String title, int year, int pages) {

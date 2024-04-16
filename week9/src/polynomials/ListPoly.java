@@ -29,12 +29,8 @@ public class ListPoly extends AbstractPoly {
 
     @Override
     public Poly derivative() {
-        double[] arr = new double[degree()];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = coefficients.get(i + 1) * (i + 1);
-        }
-        ListPoly newArrPoly = new ListPoly(arr);
-        return (Poly) newArrPoly;
+        double[] arr = derive();
+        return new ListPoly(arr);
     }
 
     @Override
@@ -49,26 +45,5 @@ public class ListPoly extends AbstractPoly {
             arr[i] = coefficients.get(i);
         }
         return arr;
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder polynominalStr = new StringBuilder();
-        for (int i = this.degree(); i >= 0; i--) {
-            if (coefficients.get(i) != 0) {
-                if (coefficients.get(i) > 0 && i != this.degree()) {
-                    polynominalStr.append("+");
-                }
-
-                if (i == 0) {
-                    polynominalStr.append(coefficients.get(i));
-                } else if (i == 1) {
-                    polynominalStr.append(coefficients.get(i)).append("x");
-                } else {
-                    polynominalStr.append(coefficients.get(i)).append("x^").append(i);
-                }
-            }
-        }
-        return polynominalStr.toString();
     }
 }

@@ -6,6 +6,7 @@ public class ArrayPoly extends AbstractPoly {
     private final double[] coefficients;
 
     public ArrayPoly(double[] coefficients) {
+        super();
         this.coefficients = coefficients;
     }
 
@@ -23,12 +24,8 @@ public class ArrayPoly extends AbstractPoly {
 
     @Override
     public Poly derivative() {
-        double[] arr = new double[degree()];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = coefficients[i + 1] * (i + 1);
-        }
-        ArrayPoly newArrPoly = new ArrayPoly(arr);
-        return (Poly) newArrPoly;
+        double[] arr = derive();
+        return new ArrayPoly(arr);
     }
 
     @Override
@@ -43,26 +40,5 @@ public class ArrayPoly extends AbstractPoly {
             arr[i] = coefficients[i];
         }
         return arr;
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder polynominalStr = new StringBuilder();
-        for (int i = this.degree(); i >= 0; i--) {
-            if (coefficients[i] != 0) {
-                if (coefficients[i] > 0 && i != this.degree()) {
-                    polynominalStr.append("+");
-                }
-
-                if (i == 0) {
-                    polynominalStr.append(coefficients[i]);
-                } else if (i == 1) {
-                    polynominalStr.append(coefficients[i]).append("x");
-                } else {
-                    polynominalStr.append(coefficients[i]).append("x^").append(i);
-                }
-            }
-        }
-        return polynominalStr.toString();
     }
 }

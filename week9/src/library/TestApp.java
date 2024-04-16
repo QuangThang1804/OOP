@@ -39,7 +39,7 @@ public class TestApp {
             students[j + 1] = key;
         }
 
-        for (Student student: students) {
+        for (Student student : students) {
             System.out.println(student);
         }
     }

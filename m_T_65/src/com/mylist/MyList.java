@@ -1,14 +1,9 @@
-package mylist;
+package com.mylist;
 
 public interface MyList {
     void add(Object o);
-
     void add(Object o, int index);
-
-    void remove(int index);
-
     Object get(int index);
-
+    void remove(int index);
     int size();
-
 }

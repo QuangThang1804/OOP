@@ -2,7 +2,7 @@ package polynomials;
 
 public class TestApp {
     public static void main(String[] args) {
-        Poly ap = new ArrayPoly(new double[]{1, 3, 4, 8});
+        Poly ap = new ArrayPoly(new double[]{1, 3, 4, 8, 0, 0});
         Poly lp = new ListPoly(new double[]{1, 3, 4, 8});
 
         System.out.println("ap = " + ap);

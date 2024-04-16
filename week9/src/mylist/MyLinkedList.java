@@ -38,11 +38,12 @@ public class MyLinkedList extends MyAbstractList {
     @Override
     public void remove(int index) {
         checkBoundaries(index, size);
-        if (index == 1) {
+        if (index == 0) {
             head = head.getNext();
         } else {
             MyLinkedListNode current = getNodeByIndex(index - 1);
-            current.setNext(new MyLinkedListNode(current.getNext()));
+            MyLinkedListNode nextNode = getNodeByIndex(index + 1);
+            current.setNext(nextNode);
         }
         size--;
     }
@@ -54,6 +55,6 @@ public class MyLinkedList extends MyAbstractList {
 
     @Override
     public int size() {
-        return size;
+        return this.size;
     }
 }

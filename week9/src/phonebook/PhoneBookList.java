@@ -2,7 +2,7 @@ package phonebook;
 
 import java.util.ArrayList;
 
-public class PhoneBookList implements PhoneBook{
+public class PhoneBookList implements PhoneBook {
     ArrayList<Student> phoneBook;
 
     public PhoneBookList() {
