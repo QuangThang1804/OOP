@@ -61,7 +61,7 @@ public class LinkedListMyList extends AbstractMyList {
      */
     @Override
     public void insertAtEnd(int value) {
-        insertAtPos(value, size - 1);
+        insertAtPos(value, size);
     }
 
     /**
@@ -86,6 +86,7 @@ public class LinkedListMyList extends AbstractMyList {
                     newNode.next = current.next;
                 } else {
                     this.end = newNode;
+                    newNode.next = null;
                 }
             }
             size++;
@@ -101,11 +102,16 @@ public class LinkedListMyList extends AbstractMyList {
      */
     @Override
     public void remove(int index) {
-        Node current = start;
-        for (int i = 0; i < index - 1; i++) {
-            current = current.next;
+        checkBoundaries(index, size);
+        if (index == 0) {
+            this.start = start.getNext();
+        } else {
+            Node current = getNodeByIndex(index - 1);
+            current.next = getNodeByIndex(index + 1);
+            if (index == size - 1) {
+                this.end = current;
+            }
         }
-        current.next = (current.next).next;
         size--;
     }
 

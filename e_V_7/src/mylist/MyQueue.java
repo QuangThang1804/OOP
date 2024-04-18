@@ -48,4 +48,9 @@ public class MyQueue {
     public int size() {
         return queueData.size();
     }
+
+    @Override
+    public String toString() {
+        return queueData.toString();
+    }
 }

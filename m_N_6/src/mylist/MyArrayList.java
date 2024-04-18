@@ -26,7 +26,7 @@ public class MyArrayList extends MyAbstractList{
 
     @Override
     public MyIterable iterator() {
-        return null;
+        return this;
     }
 
     @Override

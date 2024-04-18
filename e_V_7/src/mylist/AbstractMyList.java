@@ -21,8 +21,10 @@ public abstract class AbstractMyList implements MyList {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("[");
         for (int i = 0; i < size(); i++) {
+            if (i == 0) {
+                sb.append("[");
+            }
             if (i != size() - 1) {
                 sb.append(get(i)).append(", ");
             } else {

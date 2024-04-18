@@ -16,23 +16,14 @@ public class App {
     public static void main(String[] args) {
         init();
         testOriginalData();
-        System.out.println("test FilterBooksHighestPrice");
         testFilterBooksHighestPrice();
-        System.out.println("test FilterBooksLowestPrice");
         testFilterBooksLowestPrice();
-        System.out.println("test FilterBooksOfAuthor");
         testFilterBooksOfAuthor();
-        System.out.println("test FilterBooksOfGenre");
         testFilterBooksOfGenre();
-        System.out.println("test FilterBooksOfPublisher");
         testFilterBooksOfPublisher();
-        System.out.println("test PriceOfBooksDecreasing");
         testPriceOfBooksDecreasing();
-        System.out.println("test PriceOfBooksIncreasing");
         testPriceOfBooksIncreasing();
-        System.out.println("test SortDecreasingGenreAndPrice");
         testSortDecreasingGenreAndPrice();
-        System.out.println("test SortIncreasingGenreAndPrice");
         testSortIncreasingGenreAndPrice();
 
         /* Yêu cầu:
@@ -135,35 +126,45 @@ public class App {
      * Test sắp xếp sách theo tiêu chí, đầu tiên theo genre tăng dần, sau đó theo giá giảm dần.
      */
     public static void testSortIncreasingGenreAndPrice() {
+        System.out.println("test SortIncreasingGenreAndPrice");
         print(bookManager.sortIncreasingGenreAndPrice());
+        System.out.println();
     }
 
     /**
      * Test sắp xếp sách theo tiêu chí, đầu tiên theo genre giảm dần, sau đó theo giá giảm dần.
      */
     public static void testSortDecreasingGenreAndPrice() {
+        System.out.println("test SortDecreasingGenreAndPrice");
         print(bookManager.sortDecreasingGenreAndPrice());
+        System.out.println();
     }
 
     /**
      * Test sắp xếp sách theo giá tăng dần.
      */
     public static void testPriceOfBooksIncreasing() {
+        System.out.println("test PriceOfBooksIncreasing");
         print(bookManager.sortIncreasingPrice());
+        System.out.println();
     }
 
     /**
      * Test sắp xếp sách theo giá giảm dần
      */
     public static void testPriceOfBooksDecreasing() {
+        System.out.println("test PriceOfBooksDecreasing");
         print(bookManager.sortDecreasingPrice());
+        System.out.println();
     }
 
     /**
      * Test lọc sách có giá rẻ nhất.
      */
     public static void testFilterBooksLowestPrice() {
+        System.out.println("test FilterBooksLowestPrice");
         print(bookManager.filterBookLowestPrice(5));
+        System.out.println();
     }
 
     /**
@@ -172,27 +173,35 @@ public class App {
     public static void testFilterBooksHighestPrice() {
 //        List<Book> highestPrice = bookManager.filterHighestPrice(5);
 //        System.out.println(highestPrice.toString());
+        System.out.println("test FilterBooksHighestPrice");
         print(bookManager.filterHighestPrice(5));
+        System.out.println();
     }
 
     /**
      * Test lọc sách theo tác giả.
      */
     public static void testFilterBooksOfAuthor() {
+        System.out.println("test FilterBooksOfAuthor");
         print(bookManager.filterBooksOfAuthor("Steinbeck John"));
+        System.out.println();
     }
 
     /**
      * Test lọc sách theo nhà xuất bản.
      */
     public static void testFilterBooksOfPublisher() {
+        System.out.println("test FilterBooksOfPublisher");
         print(bookManager.filterBooksOfPublisher("Wiley"));
+        System.out.println();
     }
 
     /**
      * Test lọc sách theo thể loại.
      */
     public static void testFilterBooksOfGenre() {
+        System.out.println("test FilterBooksOfGenre");
         print(bookManager.filterBooksOfGenre("history"));
+        System.out.println();
     }
 }

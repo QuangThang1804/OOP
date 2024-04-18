@@ -110,7 +110,7 @@ public class BreadStore {
 	 * nếu order là false thì lọc ra bánh mỳ có giá thấp nhất.
 	 */
 	public List<Bread> filter(int howMany, boolean order) {
-		List<Bread> sortBreads = sort(order);
+		List<Bread> sortBreads = sort(!order);
 		List<Bread> resultListBreads = new LinkedList<>();
 		for (int i = 0; i < howMany; i++) {
 			resultListBreads.add(sortBreads.get(i));

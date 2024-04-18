@@ -48,4 +48,9 @@ public class MyStack {
     public int size() {
         return stackData.size();
     }
+
+    @Override
+    public String toString() {
+        return stackData.toString();
+    }
 }

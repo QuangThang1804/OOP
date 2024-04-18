@@ -8,6 +8,7 @@ public class App {
         list.insertAtEnd(7);
         System.out.println(list.toString());
 //        testQueue();
+//        testStack();
         /*
         Yêu cầu:
 
@@ -26,24 +27,30 @@ public class App {
     }
 
     public static void testStack() {
-
-        /* TODO */
+        int n = (int) (Math.random() * 15) + 15;
+        System.out.println(n);
+        MyStack myStack = new MyStack();
+        for (int i = 0; i <= n; i++) {
+            myStack.push((int) (Math.random() * 100));
+        }
+        while (!myStack.isEmpty()) {
+            myStack.pop();
+            System.out.println(myStack);
+        }
+        System.out.println();
     }
 
     public static void testQueue() {
+        int n = (int) (Math.random() * 15) + 15;
+        System.out.println(n);
         MyQueue myQueue = new MyQueue();
-        myQueue.add(2);
-        myQueue.add(4);
-        myQueue.add(5);
-        System.out.println(myQueue.toString());
-        myQueue.remove();
-        System.out.println(myQueue);
-
-        System.out.println(myQueue.peek());
-        if (myQueue.isEmpty()) {
-            System.out.println("Queue empty");
-        } else {
-            System.out.println("Queue not empty");
+        for (int i = 0; i <= n; i++) {
+            myQueue.add((int) (Math.random() * 100));
         }
+        while (!myQueue.isEmpty()) {
+            myQueue.remove();
+            System.out.println(myQueue);
+        }
+        System.out.println();
     }
 }

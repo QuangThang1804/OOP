@@ -30,7 +30,6 @@ public class MyLinkedList extends MyAbstractList {
             head = new MyLinkedListNode(o, head);
         } else {
             MyLinkedListNode current = getNodeByIndex(index - 1);
-            MyLinkedListNode nextNode = new MyLinkedListNode(o, current.getNext());
             current.setNext(new MyLinkedListNode(o, current.getNext()));
         }
         size++;
