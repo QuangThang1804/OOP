@@ -10,6 +10,7 @@ public class LinkedListMyList extends AbstractMyList {
      */
     public LinkedListMyList() {
         this.start = null;
+//        this.end = null;
         this.size = 0;
     }
 
@@ -72,27 +73,52 @@ public class LinkedListMyList extends AbstractMyList {
      */
     @Override
     public void insertAtPos(int value, int index) {
-        Node newNode;
+//        if (!checkBoundaries(index, size)) {
+//            throw new ArrayIndexOutOfBoundsException("Index out of range");
+//        }
+        // Xử lý cả end và start
         if (checkBoundaries(index, size)) {
-            if (index == 0) {
-                newNode = new Node(value);
-                newNode.next = this.start;
-                this.start = newNode;
+            Node newNode = new Node(value);
+            if (size == 0) {
+                start = newNode;
+                end = newNode;
+            } else if (index == 0) {
+                newNode.next = start;
+                start = newNode;
+            } else if (index == size) {
+                end.next = newNode;
+                end = newNode;
             } else {
-                Node current = getNodeByIndex(index - 1);
-                newNode = new Node(value);
-                current.next = newNode;
-                if (index != size - 1) {
-                    newNode.next = current.next;
-                } else {
-                    this.end = newNode;
-                    newNode.next = null;
-                }
+                Node prevNode = getNodeByIndex(index - 1);
+                newNode.next = prevNode.next;
+                prevNode.next = newNode;
             }
             size++;
         } else {
             System.out.println("Index out of range");
         }
+
+//        Node newNode;
+//        if (checkBoundaries(index, size)) {
+//            if (index == 0) {
+//                newNode = new Node(value);
+//                newNode.next = this.start;
+//                this.start = newNode;
+//            } else {
+//                Node current = getNodeByIndex(index - 1);
+//                newNode = new Node(value);
+//                current.next = newNode;
+//                if (index != size - 1) {
+//                    newNode.next = current.next;
+//                } else {
+//                    this.end = newNode;
+//                    newNode.next = null;
+//                }
+//            }
+//            size++;
+//        } else {
+//            System.out.println("Index out of range");
+//        }
     }
 
     /**

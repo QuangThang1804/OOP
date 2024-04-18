@@ -6,6 +6,7 @@ public class App {
         list.insertAtStart(5);
         list.insertAtPos(6, 1);
         list.insertAtEnd(7);
+        list.insertAtPos(10, 4);
         System.out.println(list.toString());
 //        testQueue();
 //        testStack();
