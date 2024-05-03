@@ -31,6 +31,6 @@ public class Student {
     }
 
     public void identify() {
-        System.out.println(this.identification.identify());
+        this.identification.identify();
     }
 }

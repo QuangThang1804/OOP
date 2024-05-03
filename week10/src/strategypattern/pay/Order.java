@@ -4,6 +4,7 @@ public class Order {
     private static Order instance;
     private int totalCost = 0;
     private boolean isClosed = false;
+    private PayStrategy payStrategy;
 
     private Order() {
         this.totalCost = 0;
@@ -18,6 +19,10 @@ public class Order {
         System.out.println("Returning instance of Order");
         return instance;
     }
+
+    public void processOrder() {
+        this.payStrategy.collectPaymentDetails();
+    }
     public void processOrderUsingPaypal(PayByPaypal paypal) {
         paypal.collectPaymentDetails();
     }
@@ -27,7 +32,7 @@ public class Order {
     }
 
     public void setTotalCost(int totalCost) {
-        this.totalCost = totalCost;
+        this.totalCost += totalCost;
     }
 
     public int getTotalCost() {
@@ -40,5 +45,13 @@ public class Order {
 
     public void setClosed() {
         isClosed = true;
+    }
+
+    public void setPayStrategy(PayStrategy payStrategy) {
+        this.payStrategy = payStrategy;
+    }
+
+    public PayStrategy getPayStrategy() {
+        return payStrategy;
     }
 }

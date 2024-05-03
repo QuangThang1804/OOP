@@ -2,7 +2,7 @@ package strategypattern.example;
 
 public class IdentificationByFace implements Identification {
     @Override
-    public String identify() {
-        return "Please stand in front of the camera";
+    public void identify() {
+        System.out.println("Please stand in front of the camera");
     }
 }

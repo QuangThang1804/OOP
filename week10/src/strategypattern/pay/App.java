@@ -44,18 +44,17 @@ public class App {
                         "2 - Credit Card");
                 String paymentMethod = reader.readLine();
                 if (paymentMethod.equals("1")) {
-                    strategy = new PayByPaypal();
-                    order.processOrderUsingPaypal((PayByPaypal) strategy);
+                    order.setPayStrategy(new PayByPaypal());
                 } else {
-                    strategy = new PayByCreditCard();
-                    order.processOrderUsingCreditCard((PayByCreditCard) strategy);
+                    order.setPayStrategy(new PayByCreditCard());
                 }
+                order.processOrder();
             }
 
             System.out.print("Pay " + order.getTotalCost() + " units or Continue shopping? P/C: ");
             String proceed = reader.readLine();
             if (proceed.equalsIgnoreCase("P")) {
-                if (strategy.pay(order.getTotalCost())) {
+                if (order.getPayStrategy().pay(order.getTotalCost())) {
                     System.out.println("Payment has been successful.");
                 } else {
                     System.out.println("FAIL! Please, check your data.");
