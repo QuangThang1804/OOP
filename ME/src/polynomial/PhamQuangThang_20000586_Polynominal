@@ -1,0 +1,32 @@
+"C:\Program Files\Java\jdk-18.0.2.1\bin\java.exe" "-javaagent:D:\JetBrains\IntelliJ IDEA 2023.2\lib\idea_rt.jar=53752:D:\JetBrains\IntelliJ IDEA 2023.2\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath D:\Documents\Senior-year\Semester2\OOP\out\production\ME polynomial.TestPolynomial
+Test Array Polynominal
+x^3-3.0x^2+2.0x
+Gia tri cua poly tai x = 5: 60.0
+x^4-5.0x^3+10.0x^2
+Plus
+x^4-4.0x^3+7.0x^2+2.0x
+Minus
+x^3-3.0x^2+2.0x
+Multiply
+x^7-8.0x^6+27.0x^5-40.0x^4+20.0x^3
+
+Test List Polynominal
+x^3-3.0x^2+2.0x
+x^4-5.0x^3+6.0x^2
+Plus
+x^4-4.0x^3+3.0x^2+2.0x
+Minus
+x^3-3.0x^2+2.0x
+Multiply
+x^7-8.0x^6+23.0x^5-28.0x^4+12.0x^3
+
+Test Root Solver
+x^3-3.0x^2+2.0x
+nghiem theo pp Newton
+1.0
+nghiem theo pp Secant
+2.0
+nghiem theo pp Bisection
+2.0
+
+Process finished with exit code 0

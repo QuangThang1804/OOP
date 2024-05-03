@@ -203,7 +203,7 @@ public class BookManager {
 //        do {
 //            swapped = false;
 //            for (int i = 1; i < n; i++) {
-//                if (bookList.get(i - 1).(bookList.get(i)) > 0) {
+//                if (bookList.get(i - 1).compareTo(bookList.get(i)) > 0) {
 //                    temp = bookList.get(i - 1);
 //                    bookList.set(i - 1, bookList.get(i));
 //                    bookList.set(i, temp);

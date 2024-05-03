@@ -4,9 +4,15 @@ public class MyArrayListIterator implements MyIterator {
     Object[] data;
     int currentPosition;
 
+    public MyArrayListIterator(Object[] data) {
+        this.data = data;
+        this.currentPosition = 0;
+    }
+
     @Override
     public boolean hasNext() {
-        return (currentPosition != data.length - 1);
+        currentPosition++;
+        return (currentPosition <= data.length - 1 && data[currentPosition] != null);
     }
 
     @Override

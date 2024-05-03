@@ -10,8 +10,9 @@ public class MyLinkedList extends MyAbstractList{
     }
 
     @Override
-    public MyIterable iterator() {
-        return null;
+    public MyIterator iterator() {
+        MyLinkedListIterator newList = new MyLinkedListIterator(head);
+        return newList;
     }
 
     @Override

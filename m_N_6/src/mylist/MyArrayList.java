@@ -25,8 +25,10 @@ public class MyArrayList extends MyAbstractList{
     }
 
     @Override
-    public MyIterable iterator() {
-        return this;
+    public MyIterator iterator() {
+        MyIterator newArr = new MyArrayListIterator(data);
+        return newArr;
+//        return this;
     }
 
     @Override
@@ -40,7 +42,7 @@ public class MyArrayList extends MyAbstractList{
             enlarge();
         }
 
-        for (int i = size; i >= 0; i--) {
+        for (int i = size; i > index; i--) {
             data[i] = data[i - 1];
         }
         data[index] = o;

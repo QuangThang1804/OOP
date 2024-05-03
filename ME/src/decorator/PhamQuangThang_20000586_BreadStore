@@ -1,0 +1,324 @@
+"C:\Program Files\Java\jdk-18.0.2.1\bin\java.exe" "-javaagent:D:\JetBrains\IntelliJ IDEA 2023.2\lib\idea_rt.jar=52335:D:\JetBrains\IntelliJ IDEA 2023.2\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath D:\Documents\Senior-year\Semester2\OOP\out\production\ME decorator.BreadStore
+**** in ra những bánh mỳ còn lại trong cửa hàng
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+**** in ra số bánh mỳ còn lại theo thứ tự giá giảm dần
+[{ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}]
+**** in ra những bánh mỳ còn lại trong cửa hàng
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+**** in ra số bánh mỳ còn lại theo thứ tự giá giảm dần
+[{ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}]
+**** in ra những bánh mỳ còn lại trong cửa hàng
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+**** in ra số bánh mỳ còn lại theo thứ tự giá giảm dần
+[{ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}]
+**** in ra những bánh mỳ còn lại trong cửa hàng
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+**** in ra số bánh mỳ còn lại theo thứ tự giá giảm dần
+[{ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}]
+**** in ra những bánh mỳ còn lại trong cửa hàng
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+{ThickcrustBread + Cheese, Cost 31.0}
+{ThickcrustBread + Olives, Cost 32.0}
+{ThickcrustBread + Cheese + Olives, Cost 33.0}
+{ThickcrustBread + Olives + Cheese, Cost 33.0}
+{ThincrustBread + Cheese, Cost 21.0}
+{ThincrustBread + Olives, Cost 22.0}
+{ThincrustBread + Cheese + Olives, Cost 23.0}
+{ThincrustBread + Olives + Cheese, Cost 23.0}
+**** in ra số bánh mỳ còn lại theo thứ tự giá giảm dần
+[{ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Olives, Cost 32.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThickcrustBread + Cheese, Cost 31.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Cheese + Olives, Cost 23.0}, {ThincrustBread + Olives + Cheese, Cost 23.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Olives, Cost 22.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}, {ThincrustBread + Cheese, Cost 21.0}]
+In ra nhiều nhất 10 cái bánh mỳ có giá cao nhất còn lại trong cửa hàng
+[{ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}, {ThickcrustBread + Olives + Cheese, Cost 33.0}, {ThickcrustBread + Cheese + Olives, Cost 33.0}]
+
