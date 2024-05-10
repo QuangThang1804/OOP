@@ -7,14 +7,13 @@ public class CompressionDecorator extends DataSourceDecorator {
 
     @Override
     public void writeData(String data) {
-        String compressData = "compress" + data;
-        this.
-        this.writeData(compressData);
+        String compressData = " compress" + data;
+        super.writeData(compressData);
     }
 
     @Override
     public String readData() {
-        String getData = this.readData();
-        return "decrypt data " + getData;
+        String getData = super.readData();
+        return " decrypt data " + getData;
     }
 }

@@ -7,13 +7,13 @@ public class EncryptionDecorator extends DataSourceDecorator {
 
     @Override
     public void writeData(String data) {
-        String encryptData = "encrypt" + data;
-        this.writeData(encryptData);
+        String encryptData = " encrypt" + data;
+        super.writeData(encryptData);
     }
 
     @Override
     public String readData() {
-        String getData = this.readData();
-        return "decrypt data " + getData;
+        String getData = super.readData();
+        return " decrypt data " + getData;
     }
 }
