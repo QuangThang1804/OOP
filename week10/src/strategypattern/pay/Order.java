@@ -23,13 +23,6 @@ public class Order {
     public void processOrder() {
         this.payStrategy.collectPaymentDetails();
     }
-    public void processOrderUsingPaypal(PayByPaypal paypal) {
-        paypal.collectPaymentDetails();
-    }
-
-    public void processOrderUsingCreditCard(PayByCreditCard creditCard) {
-        creditCard.collectPaymentDetails();
-    }
 
     public void setTotalCost(int totalCost) {
         this.totalCost += totalCost;
