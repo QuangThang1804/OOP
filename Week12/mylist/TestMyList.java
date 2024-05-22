@@ -44,13 +44,13 @@ public class TestMyList {
         System.out.println("Test LinkedList");
         MyLinkedList myLinkedList = new MyLinkedList();
         for (int i = 0; i < 10; i++) {
-            myLinkedList.append(Math.random() * 10);
+//            myLinkedList.append(Math.random() * 10);
+            myLinkedList.append((double) i);
         }
 
         System.out.println(myLinkedList);
         BasicStatistic basicStatistic = new BasicStatistic(myLinkedList);
-        MyLinkedListIterator myLinkedListIterator =
-                new MyLinkedListIterator((MyLinkedListNode) myLinkedList.get(0));
+        MyIterator myLinkedListIterator = myLinkedList.iterator();
         while (myLinkedListIterator.hasNext()) {
             System.out.println(myLinkedListIterator.next());
         }

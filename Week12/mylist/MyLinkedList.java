@@ -28,11 +28,12 @@ public class MyLinkedList extends MyAbstractList {
      */
     @Override
     public Object get(int index) {
-        MyLinkedListNode current = this.head;
-        for (int i = 0; i < index; i++) {
-            current = current.getNext();
-        }
-        return current;
+        return getNodeByIndex(index).getPayload();
+//        MyLinkedListNode current = this.head;
+//        for (int i = 0; i < index; i++) {
+//            current = current.getNext();
+//        }
+//        return current;
     }
 
     /**
@@ -59,7 +60,7 @@ public class MyLinkedList extends MyAbstractList {
         if (size == 0) {
             this.head = new MyLinkedListNode(payload);
         }
-        MyLinkedListNode current = getNodeByIndex(size);
+        MyLinkedListNode current = getNodeByIndex(size - 1);
         current.setNext(new MyLinkedListNode(payload));
         size++;
     }
@@ -98,6 +99,10 @@ public class MyLinkedList extends MyAbstractList {
      * @return
      */
     private MyLinkedListNode getNodeByIndex(int index) {
-        return (MyLinkedListNode) get(index);
+        MyLinkedListNode current = this.head;
+        for (int i = 0; i <= index; i++) {
+            current = current.getNext();
+        }
+        return current;
     }
 }
