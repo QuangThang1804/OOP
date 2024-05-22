@@ -28,7 +28,7 @@ public class MyLinkedList extends MyAbstractList {
      */
     @Override
     public Object get(int index) {
-        return getNodeByIndex(index).getPayload();
+        return this.getNodeByIndex(index);
 //        MyLinkedListNode current = this.head;
 //        for (int i = 0; i < index; i++) {
 //            current = current.getNext();
@@ -57,12 +57,13 @@ public class MyLinkedList extends MyAbstractList {
      */
     @Override
     public void append(Object payload) {
-        if (size == 0) {
-            this.head = new MyLinkedListNode(payload);
-        }
-        MyLinkedListNode current = getNodeByIndex(size - 1);
-        current.setNext(new MyLinkedListNode(payload));
-        size++;
+//        if (size == 0) {
+//            this.head = new MyLinkedListNode(payload);
+//        }
+//        MyLinkedListNode current = getNodeByIndex(size - 1);
+//        current.setNext(new MyLinkedListNode(payload));
+//        size++;
+        this.insert(payload, this.size);
     }
 
     /**
@@ -72,16 +73,19 @@ public class MyLinkedList extends MyAbstractList {
      */
     @Override
     public void insert(Object payload, int index) {
-        MyLinkedListNode insertNode = new MyLinkedListNode(payload);
         if (index == 0) {
-            insertNode.setNext(head.getNext());
-            this.head = insertNode;
+//            insertNode.setNext(head.getNext());
+//            this.head = insertNode;
+            this.head = new MyLinkedListNode(payload, this.head);
         } else {
-            MyLinkedListNode current = getNodeByIndex(index);
-            insertNode.setNext(current.getNext());
-            current.setNext(insertNode);
+//            MyLinkedListNode insertNode = new MyLinkedListNode(payload);
+//            MyLinkedListNode current = getNodeByIndex(index - 1);
+//            insertNode.setNext(current.getNext());
+//            current.setNext(insertNode);
+            MyLinkedListNode current = getNodeByIndex(index - 1);
+            current.setNext(new MyLinkedListNode(payload, current.getNext()));
         }
-
+        this.size++;
     }
 
     /**
@@ -100,7 +104,7 @@ public class MyLinkedList extends MyAbstractList {
      */
     private MyLinkedListNode getNodeByIndex(int index) {
         MyLinkedListNode current = this.head;
-        for (int i = 0; i <= index; i++) {
+        for (int i = 0; i < index; i++) {
             current = current.getNext();
         }
         return current;

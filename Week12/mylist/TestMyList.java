@@ -45,7 +45,8 @@ public class TestMyList {
         MyLinkedList myLinkedList = new MyLinkedList();
         for (int i = 0; i < 10; i++) {
 //            myLinkedList.append(Math.random() * 10);
-            myLinkedList.append((double) i);
+//            myLinkedList.append((double) i);
+            myLinkedList.insert((double) i, i);
         }
 
         System.out.println(myLinkedList);
