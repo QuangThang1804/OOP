@@ -29,6 +29,9 @@ public class MyArrayList extends MyAbstractList {
      */
     @Override
     public Object get(int index) {
+        if ((index < 0) || (index >= this.size)) {
+            return null;
+        }
         return data[index];
     }
 
@@ -38,9 +41,13 @@ public class MyArrayList extends MyAbstractList {
      */
     @Override
     public void remove(int index) {
+        if ((index < 0) || (index >= this.size)) {
+            return;
+        }
         for (int i = index; i < this.size() - 1; i++) {
             data[i] = data[i + 1];
         }
+        this.data[size - 1] = null;
         this.size--;
     }
 
@@ -65,13 +72,14 @@ public class MyArrayList extends MyAbstractList {
      */
     @Override
     public void insert(Object payload, int index) {
-        if (this.size() >= data.length - 1) {
+        if (this.size() == data.length) {
             enlarge();
         }
         for (int i = this.size() - 1; i > index; i--) {
             data[i + 1] = data[i];
         }
         data[index] = payload;
+        this.size++;
     }
 
     /**
@@ -91,4 +99,9 @@ public class MyArrayList extends MyAbstractList {
         System.arraycopy(data, 0, newData, 0, this.size());
         this.data = newData;
     }
+
+    // code thay dung MyArrayListIterator -> inner class
+//    private class MyArrayListIterator {
+//        private
+//    }
 }

@@ -1,4 +1,4 @@
-package com.mylist;
+package hus.m_T_65.src.com.mylist;
 
 public class MyArrayList extends MyAbstracList{
     static final int INITIAL_SIZE = 16;

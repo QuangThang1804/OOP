@@ -23,7 +23,7 @@ public class MyLinkedListIterator implements MyIterator {
      */
     @Override
     public boolean hasNext() {
-        return this.currentNode.getNext() != null;
+        return this.currentNode != null;
     }
 
     /**
@@ -32,11 +32,10 @@ public class MyLinkedListIterator implements MyIterator {
      */
     @Override
     public Object next() {
-        if (hasNext()) {
-            Object current = this.currentNode.getNext();
-            this.currentNode = this.currentNode.getNext();
-            return current;
-        }
-        return null;
+        MyLinkedListNode current = this.currentNode;
+        this.currentNode = this.currentNode.getNext();
+        return current.getPayload(); // muc dich la tra ve payload
+
+//        return null;
     }
 }

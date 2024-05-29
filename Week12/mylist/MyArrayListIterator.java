@@ -20,7 +20,7 @@ public class MyArrayListIterator implements MyIterator {
      */
     public MyArrayListIterator(Object[] data) {
         this.data = data;
-        currentPosition = 0;
+        this.currentPosition = 0;
     }
 
     /**
@@ -30,8 +30,8 @@ public class MyArrayListIterator implements MyIterator {
      */
     @Override
     public boolean hasNext() {
-        int nextPosition = currentPosition + 1;
-        return this.data[nextPosition] != null;
+        return (this.currentPosition < this.data.length) &&
+                this.data[currentPosition] != null;
     }
 
     /**
@@ -40,9 +40,6 @@ public class MyArrayListIterator implements MyIterator {
      */
     @Override
     public Object next() {
-        if (hasNext()) {
-            return this.data[currentPosition++];
-        }
-        return null;
+        return this.data[currentPosition++];
     }
 }

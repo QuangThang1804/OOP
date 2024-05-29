@@ -1,4 +1,4 @@
-package com.mylist;
+package hus.m_T_65.src.com.mylist;
 
 public class MyAbstracList implements MyList{
     boolean checkBoundaries(int index, int limit){

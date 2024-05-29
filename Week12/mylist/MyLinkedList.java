@@ -19,6 +19,15 @@ public class MyLinkedList extends MyAbstractList {
     @Override
     public int size() {
         return this.size;
+        // Neu k co size
+//        int count = 0;
+//        MyLinkedListNode currentNode = this.head;
+//        while (currentNode != null) {
+//            count++;
+//            currentNode = currentNode.getNext();
+//        }
+//        return count;
+
     }
 
     /**
@@ -28,7 +37,7 @@ public class MyLinkedList extends MyAbstractList {
      */
     @Override
     public Object get(int index) {
-        return this.getNodeByIndex(index);
+        return this.getNodeByIndex(index).getPayload();
 //        MyLinkedListNode current = this.head;
 //        for (int i = 0; i < index; i++) {
 //            current = current.getNext();
@@ -42,11 +51,30 @@ public class MyLinkedList extends MyAbstractList {
      */
     @Override
     public void remove(int index) {
+        if (index < 0 || index >= this.size) {
+            return;
+        }
         if (index == 0) {
-            this.head = this.getNodeByIndex(1);
+//            this.head = this.getNodeByIndex(1);
+            if (this.head == null) {
+                return;
+            }
+            MyLinkedListNode nextNode = this.head.getNext();
+            if (nextNode == null) {
+                this.head = null;
+                return;
+            }
+            this.head = nextNode;
+        } else if (index == size - 1) {
+            MyLinkedListNode preNode = getNodeByIndex(index - 1);
+            if (preNode == null) {
+                return;
+            }
+            preNode.setNext(null);
         } else {
             MyLinkedListNode current = getNodeByIndex(index - 1);
-            current.setNext(getNodeByIndex(index + 1));
+//            current.setNext(getNodeByIndex(index + 1));
+            current.setNext(current.getNext().getNext());
         }
         size--;
     }
@@ -73,19 +101,30 @@ public class MyLinkedList extends MyAbstractList {
      */
     @Override
     public void insert(Object payload, int index) {
+        if (index < 0 || index > size) {
+            return;
+        }
         if (index == 0) {
-//            insertNode.setNext(head.getNext());
-//            this.head = insertNode;
             this.head = new MyLinkedListNode(payload, this.head);
         } else {
-//            MyLinkedListNode insertNode = new MyLinkedListNode(payload);
-//            MyLinkedListNode current = getNodeByIndex(index - 1);
-//            insertNode.setNext(current.getNext());
-//            current.setNext(insertNode);
             MyLinkedListNode current = getNodeByIndex(index - 1);
             current.setNext(new MyLinkedListNode(payload, current.getNext()));
         }
         this.size++;
+
+        // code cua thay Ha
+//        MyLinkedListNode newNode = new MyLinkedListNode(payload);
+//        if (index == 0) {
+//            newNode.setNext(this.head);
+//            this.head = newNode;
+//        }
+//
+//        if (index == size) {
+//            this.append(payload);
+//        }
+//        MyLinkedListNode currentNode = getNodeByIndex(index);
+//        MyLinkedListNode nextNode = currentNode.getNext();
+//
     }
 
     /**

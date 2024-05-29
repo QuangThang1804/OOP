@@ -15,15 +15,25 @@ public class BasicStatistic {
      * @return giá trị lớn nhất.
      */
     public double max() {
-        double max = Double.NEGATIVE_INFINITY;
-        double convertDataToDouble;
-        for (int i = 0; i < data.size(); i++) {
-            convertDataToDouble = Double.parseDouble(this.data.get(i).toString());
-            if (convertDataToDouble > max) {
-                max = convertDataToDouble;
+//        double max = (double) this.data.get(0);
+//        double convertDataToDouble;
+//        for (int i = 1; i < data.size(); i++) {
+//            convertDataToDouble = (double) (this.data.get(i));
+//            if (convertDataToDouble > max) {
+//                max = convertDataToDouble;
+//            }
+//        }
+//        return max;
+        //code thay ha
+        double maxValue = Double.MIN_VALUE;
+        MyIterator it = data.iterator();
+        while (it.hasNext()) {
+            double value = (Double) it.next();
+            if (maxValue < value) {
+                maxValue = value;
             }
         }
-        return max;
+        return maxValue;
     }
 
     /**

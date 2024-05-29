@@ -3,11 +3,13 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        List<Integer> newList = new ArrayList<>();
-        newList.add(5);
-        newList.add(6);
-        newList.add(7);
-        System.out.println(newList);
+        ArrayList<Integer> arr = new ArrayList<>();
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        System.out.println(arr.toString());
+
+        arr.set(1, null);
+        System.out.println(arr.toString());
     }
 }
