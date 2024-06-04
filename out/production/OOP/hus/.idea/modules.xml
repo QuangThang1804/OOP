@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Final Exam 66/Final Exam 66.iml" filepath="$PROJECT_DIR$/Final Exam 66/Final Exam 66.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Final Exam K65/Final Exam K65.iml" filepath="$PROJECT_DIR$/Final Exam K65/Final Exam K65.iml" />
       <module fileurl="file://$PROJECT_DIR$/ME/ME.iml" filepath="$PROJECT_DIR$/ME/ME.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP.iml" filepath="$PROJECT_DIR$/OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ving_Test/Ving_Test.iml" filepath="$PROJECT_DIR$/Ving_Test/Ving_Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week7-Abstract/Week7-Abstract.iml" filepath="$PROJECT_DIR$/Week7-Abstract/Week7-Abstract.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop/lap11/factory/builderpattern/builderpattern.iml" filepath="$PROJECT_DIR$/oop/lap11/factory/builderpattern/builderpattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/e_V_7/e_V_7.iml" filepath="$PROJECT_DIR$/e_V_7/e_V_7.iml" />
