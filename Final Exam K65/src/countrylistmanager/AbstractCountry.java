@@ -7,6 +7,7 @@ public abstract class AbstractCountry {
     public abstract int getPopulation();
     public abstract double getArea();
     public abstract double getGdp();
+    public abstract String getContinent();
 
     @Override
     public String toString() {

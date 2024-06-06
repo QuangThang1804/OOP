@@ -9,27 +9,32 @@ public class AfricaCountry extends AbstractCountry {
 
     @Override
     public String getCode() {
-        return null;
+        return data.getCode();
     }
 
     @Override
     public String getName() {
-        return null;
+        return data.getName();
     }
 
     @Override
     public int getPopulation() {
-        return 0;
+        return data.getPopulation();
     }
 
     @Override
     public double getArea() {
-        return 0;
+        return data.getArea();
     }
 
     @Override
     public double getGdp() {
-        return 0;
+        return data.getGdp();
+    }
+
+    @Override
+    public String getContinent() {
+        return data.getContinent();
     }
 
     /* TODO */

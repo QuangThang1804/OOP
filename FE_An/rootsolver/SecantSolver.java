@@ -25,20 +25,31 @@ public class SecantSolver implements RootSolver {
     public double solve(AbstractFunction function, double lower, double upper) {
         double result = lower - (function.evaluate(lower) * (lower - upper))
                 / (function.evaluate(lower) - function.evaluate(upper));
-        double doChenhLech = Math.abs(function.evaluate(result));
-        while (Math.abs(doChenhLech) > 0.001) {
+        double difference = Math.abs(function.evaluate(result));
+        while (Math.abs(difference) > this.tolerance) {
             if (maxIterations-- > 0) {
                 upper = lower;
                 lower = result;
                 result =  lower - (function.evaluate(lower) * (lower - upper))
                         / (function.evaluate(lower) - function.evaluate(upper));
-                doChenhLech = Math.abs(function.evaluate(result));
+                difference = Math.abs(function.evaluate(result));
             }
         }
-        if (doChenhLech > 0.00001) {
+        if (difference > 0.00001) {
             return Double.NEGATIVE_INFINITY;
         } else {
             return result;
         }
+//        double x = 0;
+//        for (int i = 0; i < maxIterations; i++) {
+//            x = upper - function.evaluate(upper) * (upper - lower)
+//                    / (function.evaluate(upper) - function.evaluate(lower));
+//            if (Math.abs(x) < this.tolerance) {
+//                break;
+//            }
+//            lower = upper;
+//            upper = x;
+//        }
+//        return x;
     }
 }

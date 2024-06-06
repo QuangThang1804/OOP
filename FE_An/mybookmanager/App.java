@@ -12,6 +12,14 @@ public class App {
 
     public static void main(String[] args) {
         init();
+        testOriginalData();
+        testFilterBooksOfAuthor();
+        testFilterBooksOfGenre();
+        testFilterBooksOfPublisher();
+        testGetHighestNumberOfPagesBook();
+        testGetHighestPriceBook();
+        testGetLowestNumberOfPagesBook();
+        testGetLowestPriceBook();
 
         /* Yêu cầu:
         - Hoàn thiện code chương trình theo mẫu đã cho.
@@ -101,6 +109,7 @@ public class App {
     }
 
     public static void testOriginalData() {
+        System.out.println("Test original data");
         print(bookManager.getBookList());
     }
 
@@ -108,27 +117,31 @@ public class App {
      * Test lọc ra những book theo tác giả.
      */
     public static void testFilterBooksOfAuthor() {
-        print(bookManager.filterBooksOfAuthor("author"));
+        System.out.println("Test filter books of author");
+        print(bookManager.filterBooksOfAuthor("Goswami Jaideva"));
     }
 
     /**
      * Test lọc ra những book theo nhà xuất bản.
      */
     public static void testFilterBooksOfPublisher() {
-        print(bookManager.filterBooksOfPublisher("publisher"));
+        System.out.println("test filter books of publisher");
+        print(bookManager.filterBooksOfPublisher("Wiley"));
     }
 
     /**
      * Test lọc ra những book theo thể loại.
      */
     public static void testFilterBooksOfGenre() {
-        print(bookManager.filterBooksOfGenre("horror"));
+        System.out.println("Test filter books of genre");
+        print(bookManager.filterBooksOfGenre("data_science"));
     }
 
     /**
      * Test lấy ra sách có giá cao nhất.
      */
     public static void testGetHighestPriceBook() {
+        System.out.println("test get highest price book");
         System.out.println(bookManager.highestPriceBook());
     }
 
@@ -136,6 +149,7 @@ public class App {
      * Test lấy ra sách có giá thấp nhất.
      */
     public static void testGetLowestPriceBook() {
+        System.out.println("Test het lowest price book");
         System.out.println(bookManager.lowestPriceBook());
     }
 
@@ -143,6 +157,7 @@ public class App {
      * Test lấy ra sách có số trang cao nhất.
      */
     public static void testGetHighestNumberOfPagesBook() {
+        System.out.println("test get highest number of pages book");
         System.out.println(bookManager.highestNumberOfPagesBook());
     }
 
@@ -150,6 +165,7 @@ public class App {
      * Test lấy ra sách có số trang thấp nhất.
      */
     public static void testGetLowestNumberOfPagesBook() {
+        System.out.println("Test get lowest number of pages book");
         System.out.println(bookManager.lowestNumberOfPagesBook());
     }
 

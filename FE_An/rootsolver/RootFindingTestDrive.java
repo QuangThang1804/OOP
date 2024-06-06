@@ -12,8 +12,15 @@ public class RootFindingTestDrive {
         <TenSinhVien_MaSinhVien_RootFinding>.zip (ví dụ, NguyenVanA_123456_RootFinding.txt), và nộp bài
         lên classroom.
         */
-        testRootSolver();
+        testMyMath();
+//        testRootSolver();
+    }
 
+    public static  void testMyMath() {
+        System.out.println(MyMath.sin(10));
+        System.out.println(MyMath.cos(10));
+        System.out.println(MyMath.exp(10));
+        System.out.println(MyMath.ln(0.5));
     }
 
     public static void testRootSolver() {
@@ -24,12 +31,25 @@ public class RootFindingTestDrive {
            UnivariateRealRootFinding. Các phương pháp tìm nghiệm của thể thay đổi ở thời gian chạy chương trình.
          - In ra phương pháp sử dụng, hàm và nghiệm của hàm tìm được.
          */
-        double [] polynominal = {1, -3};
         AbstractFunction function = new UnivariateRealFunction();
-        RootSolver rootSolver = new BisectionSolver(100, 1000);
-        UnivariateRealRootFinding univariateRealRootFinding = new UnivariateRealRootFinding(function, rootSolver);
-        System.out.println(rootSolver.getClass());
+        RootSolver newtonRaphsonSolver = new NewtonRaphsonSolver(0.00001, 1000);
+        RootSolver bisectionSolver = new BisectionSolver(0.00001, 1000);
+        RootSolver secantSolver = new SecantSolver(0.001, 1000);
+        // test newtonRaphson
+        UnivariateRealRootFinding univariateRealRootFinding = new UnivariateRealRootFinding(function, newtonRaphsonSolver);
+        System.out.println("test newtonRaphson");
         System.out.println("function is sin(x).x - 3");
-        System.out.println(univariateRealRootFinding.solve(-100, 100));
+        System.out.println(univariateRealRootFinding.solve(-1, 20));
+        //test bisection
+//        univariateRealRootFinding.setRootSolver(bisectionSolver);
+//        System.out.println("test bisection");
+//        System.out.println("function is sin(x).x - 3");
+//        System.out.println(univariateRealRootFinding.solve(6, 8));
+//
+//        //test secant
+//        univariateRealRootFinding.setRootSolver(secantSolver);
+//        System.out.println("test secant");
+//        System.out.println("function is sin(x).x - 3");
+//        System.out.println(univariateRealRootFinding.solve(-10, 20));
     }
 }

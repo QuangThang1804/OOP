@@ -7,12 +7,15 @@ public class CountryData {
     private double area;
     private double gdp;
 
+    private String continent;
+
     public static class CountryDataBuilder {
         private String code;
         private String name;
         private int population;
         private double area;
         private double gdp;
+        private String continent;
 
         public CountryDataBuilder(String code) {
             this.code = code;
@@ -38,6 +41,11 @@ public class CountryData {
             return this;
         }
 
+        public CountryDataBuilder setContinent(String continent) {
+            this.continent = continent;
+            return this;
+        }
+
         public CountryData build() {
             return new CountryData(this);
         }
@@ -50,6 +58,7 @@ public class CountryData {
         this.population = builder.population;
         this.area = builder.area;
         this.gdp = builder.gdp;
+        this.continent = builder.continent;
     }
 
     public String getCode() {
@@ -72,6 +81,10 @@ public class CountryData {
         return this.gdp;
     }
 
+    public String getContinent() {
+        return continent;
+    }
+
     @Override
     public String toString() {
         return "CountryData[" +
@@ -80,6 +93,7 @@ public class CountryData {
                 ", population=" + population +
                 ", area=" + area +
                 ", gdp=" + gdp +
+                ", continent=" + continent +
                 ']';
     }
 }

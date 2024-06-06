@@ -17,7 +17,10 @@ public class CountryListManager {
     }
 
     public static CountryListManager getInstance() {
-        /* TODO */
+        if (instance == null) {
+            instance = new CountryListManager();
+        }
+        return instance;
     }
 
     public List<AbstractCountry> getCountryList() {
@@ -25,23 +28,23 @@ public class CountryListManager {
     }
 
     public void append(AbstractCountry country) {
-        /* TODO */
+        this.countryList.add(country);
     }
 
     public void add(AbstractCountry country, int index) {
-        /* TODO */
+        this.countryList.add(index, country);
     }
 
     public void remove(int index) {
-        /* TODO */
+        this.countryList.remove(index);
     }
 
     public void remove(AbstractCountry country) {
-        /* TODO */
+        this.countryList.remove(country);
     }
 
     public AbstractCountry countryAt(int index) {
-        /* TODO */
+        return this.countryList.get(index);
     }
 
     public List<AbstractCountry> sortIncreasingByPopulation() {
@@ -67,47 +70,129 @@ public class CountryListManager {
     }
 
     public List<AbstractCountry> sortIncreasingByArea() {
-        /* TODO */
+        List<AbstractCountry> newList = new LinkedList<>(this.countryList);
+        Collections.sort(newList, new Comparator<AbstractCountry>() {
+            @Override
+            public int compare(AbstractCountry left, AbstractCountry right) {
+                if (right.getArea() - left.getArea() == 0) {
+                    return 0;
+                }
+                return (int) (left.getArea() - right.getArea());
+            }
+        });
+        return newList;
     }
 
     public List<AbstractCountry> sortDecreasingByArea() {
-        /* TODO */
+        List<AbstractCountry> newList = new LinkedList<>(this.countryList);
+        Collections.sort(newList, new Comparator<AbstractCountry>() {
+            @Override
+            public int compare(AbstractCountry left, AbstractCountry right) {
+                if (right.getArea() - left.getArea() == 0) {
+                    return 0;
+                }
+                return (int) (right.getArea() - left.getArea());
+            }
+        });
+        return newList;
     }
 
     public List<AbstractCountry> sortIncreasingByGdp() {
-        /* TODO */
+        List<AbstractCountry> newList = new LinkedList<>(this.countryList);
+        Collections.sort(newList, new Comparator<AbstractCountry>() {
+            @Override
+            public int compare(AbstractCountry left, AbstractCountry right) {
+                if (right.getGdp() - left.getGdp() == 0) {
+                    return 0;
+                }
+                return (int) (- right.getGdp() + left.getGdp());
+            }
+        });
+        return newList;
     }
 
     public List<AbstractCountry> sortDecreasingByGdp() {
-        /* TODO */
+        List<AbstractCountry> newList = new LinkedList<>(this.countryList);
+        Collections.sort(newList, new Comparator<AbstractCountry>() {
+            @Override
+            public int compare(AbstractCountry left, AbstractCountry right) {
+                if (right.getGdp() - left.getGdp() == 0) {
+                    return 0;
+                }
+                return (int) (right.getGdp() - left.getGdp());
+            }
+        });
+        return newList;
     }
 
     public List<AbstractCountry> filterContinent(String continent) {
-        /* TODO */
+        List<AbstractCountry> newList = new LinkedList<>();
+        for (AbstractCountry abstractCountry: this.countryList) {
+            if (abstractCountry.getContinent().equals(continent)) {
+                newList.add(abstractCountry);
+            }
+        }
+        return newList;
     }
 
     public List<AbstractCountry> filterMostPopulousCountries(int howMany) {
-        /* TODO */
+        List<AbstractCountry> newList = new LinkedList<>();
+        List<AbstractCountry> listSort = sortDecreasingByPopulation();
+
+        for (int i = 0; i < howMany; i++) {
+            newList.add(listSort.get(i));
+        }
+        return newList;
     }
 
     public List<AbstractCountry> filterLeastPopulousCountries(int howMany) {
-        /* TODO */
+        List<AbstractCountry> newList = new LinkedList<>();
+        List<AbstractCountry> listSort = sortIncreasingByPopulation();
+
+        for (int i = 0; i < howMany; i++) {
+            newList.add(listSort.get(i));
+        }
+        return newList;
     }
 
     public List<AbstractCountry> filterLargestAreaCountries(int howMany) {
-        /* TODO */
+        List<AbstractCountry> newList = new LinkedList<>();
+        List<AbstractCountry> listSort = sortDecreasingByArea();
+
+        for (int i = 0; i < howMany; i++) {
+            newList.add(listSort.get(i));
+        }
+        return newList;
     }
 
     public List<AbstractCountry> filterSmallestAreaCountries(int howMany) {
-        /* TODO */
+        List<AbstractCountry> newList = new LinkedList<>();
+        List<AbstractCountry> listSort = sortIncreasingByArea();
+
+        for (int i = 0; i < howMany; i++) {
+            newList.add(listSort.get(i));
+        }
+        return newList;
     }
 
     public List<AbstractCountry> filterHighestGdpCountries(int howMany) {
-        /* TODO */
+        List<AbstractCountry> newList = new LinkedList<>();
+        List<AbstractCountry> listSort = sortDecreasingByGdp();
+
+        for (int i = 0; i < howMany; i++) {
+            newList.add(listSort.get(i));
+        }
+        return newList;
     }
 
     public List<AbstractCountry> filterLowestGdpCountries(int howMany) {
-        /* TODO */
+        List<AbstractCountry> newList = new LinkedList<>();
+        List<AbstractCountry> listSort = sortIncreasingByGdp();
+
+        for (int i = 0; i < howMany; i++) {
+            newList.add(listSort.get(i));
+        }
+        return newList;
     }
 
     public static String codeOfCountriesToString(List<AbstractCountry> countryList) {
